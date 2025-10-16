@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="What if Uganda had been built by thinkers, not soldiers?">
-    <title>Minds Before Guns</title>
+    <meta name="description" content="Library of Alternate Histories and Time Travel Stories">
+    <title>Library of Alternate Histories</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +16,15 @@
         .glass-dark { background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease; }
         .fade-in.visible { opacity: 1; transform: translateY(0); }
-        .hero-bg { 
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                       linear-gradient(45deg, #000000 0%, #000000 16.66%, #FFD100 16.66%, #FFD100 33.33%, #DE2910 33.33%, #DE2910 50%, #000000 50%, #000000 66.66%, #FFD100 66.66%, #FFD100 83.33%, #DE2910 83.33%, #DE2910 100%);
+        .library-bg { 
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                       url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80');
             background-size: cover; 
             background-position: center; 
+            background-attachment: fixed;
+        }
+        .time-travel-gradient {
+            background: linear-gradient(135deg, #0c1445 0%, #2d1b69 50%, #8b0000 100%);
         }
         @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-10px); } 60% { transform: translateY(-5px); } }
         .bounce { animation: bounce 2s infinite; }
@@ -43,13 +47,12 @@
         }
         .nav-overlay.active { transform: translateX(0); }
         
-        .chapter-card {
+        .book-card {
             transition: all 0.3s ease;
             border-left: 4px solid transparent;
         }
-        .chapter-card:hover {
+        .book-card:hover {
             transform: translateY(-5px);
-            border-left-color: #f59e0b;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
         
@@ -71,7 +74,7 @@
     <!-- MOBILE NAVIGATION - DARK BACKGROUND FOR MAX VISIBILITY -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 backdrop-blur-md border-b border-gray-700 shadow-lg">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="playfair text-xl font-bold text-white">Minds Before Guns</a>
+            <a href="#" class="playfair text-xl font-bold text-white">Library of Alternate Histories</a>
             
             <!-- Hamburger Menu - WHITE on DARK background -->
             <div class="hamburger md:hidden flex flex-col space-y-1.5 cursor-pointer p-2">
@@ -82,8 +85,8 @@
 
             <!-- Desktop Navigation -->
             <div class="hidden md:flex space-x-6">
+                <a href="#books" class="text-gray-300 hover:text-amber-400 transition-colors">Books</a>
                 <a href="#about" class="text-gray-300 hover:text-amber-400 transition-colors">About</a>
-                <a href="#chapters" class="text-gray-300 hover:text-amber-400 transition-colors">Chapters</a>
                 <a href="#author" class="text-gray-300 hover:text-amber-400 transition-colors">Author</a>
             </div>
         </div>
@@ -101,34 +104,16 @@
                 </div>
                 
                 <div class="space-y-4">
+                    <a href="#books" class="block py-3 text-lg text-gray-300 hover:text-amber-400 transition-colors border-b border-gray-700">Books</a>
                     <a href="#about" class="block py-3 text-lg text-gray-300 hover:text-amber-400 transition-colors border-b border-gray-700">About</a>
-                    <a href="#chapters" class="block py-3 text-lg text-gray-300 hover:text-amber-400 transition-colors border-b border-gray-700">All Chapters</a>
                     <a href="#author" class="block py-3 text-lg text-gray-300 hover:text-amber-400 transition-colors border-b border-gray-700">Author</a>
-                    
-                    <!-- Chapter Links -->
-                    <div class="pt-4">
-                        <p class="text-sm font-semibold text-gray-400 uppercase tracking-wide mb-3">Chapters</p>
-                        <div class="space-y-2">
-                            <a href="chapter1.html" class="block py-2 text-gray-300 hover:text-amber-400 transition-colors">1. The Ignorant Freedom</a>
-                            <a href="chapter2.html" class="block py-2 text-gray-300 hover:text-amber-400 transition-colors">2. The First Cracks in the Dream</a>
-                            <a href="chapter3.html" class="block py-2 text-gray-300 hover:text-amber-400 transition-colors">3. The People's Awakening</a>
-                            <a href="chapter4.html" class="block py-2 text-gray-300 hover:text-amber-400 transition-colors">4. The Countercurrent</a>
-                            <a href="chapter5.html" class="block py-2 text-gray-300 hover:text-amber-400 transition-colors">5. The Capital of Dust and Dreams</a>
-                            <a href="chapter6.html" class="block py-2 text-gray-300 hover:text-amber-400 transition-colors">6. When Silence Becomes Blood</a>
-                            <a href="chapter7.html" class="block py-2 text-gray-300 hover:text-amber-400 transition-colors">7. Shadows Over Isiba</a>
-                            <a href="chapter8.html" class="block py-2 text-gray-300 hover:text-amber-400 transition-colors">8. The Heir</a>
-                            <a href="chapter9.html" class="block py-2 text-gray-300 hover:text-amber-400 transition-colors">9. The Excavation</a>
-                            <a href="chapter10.html" class="block py-2 text-gray-300 hover:text-amber-400 transition-colors">10. The Long Walk</a>
-                            <a href="epilogue.html" class="block py-2 text-gray-300 hover:text-amber-400 transition-colors">Epilogue: The Buried Seed</a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section id="hero" class="min-h-screen hero-bg flex items-center justify-center relative overflow-hidden pt-16">
+    <section id="hero" class="min-h-screen library-bg flex items-center justify-center relative overflow-hidden pt-16">
         <div class="absolute inset-0 overflow-hidden">
             <div class="absolute -top-40 -right-40 w-80 h-80 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
             <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-rose-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
@@ -136,183 +121,104 @@
         </div>
         
         <div class="glass rounded-2xl p-8 md:p-12 max-w-3xl mx-4 text-center text-white relative z-10">
-            <h1 class="playfair text-4xl md:text-6xl font-bold mb-6">Minds Before Guns</h1>
-            <p class="text-xl md:text-2xl font-light mb-8">What If Uganda Had Been Built by Thinkers, Not Soldiers?</p>
-            <p class="text-lg opacity-90 mb-8">An alternate history exploring the Uganda that could have been</p>
-            <div class="scroll-indicator mt-12 cursor-pointer" onclick="document.getElementById('chapters').scrollIntoView({behavior: 'smooth'})">
+            <h1 class="playfair text-4xl md:text-6xl font-bold mb-6">Library of Alternate Histories</h1>
+            <p class="text-xl md:text-2xl font-light mb-8">Exploring the Worlds That Could Have Been</p>
+            <p class="text-lg opacity-90 mb-8">A collection of speculative fiction exploring different paths through history</p>
+            <div class="scroll-indicator mt-12 cursor-pointer" onclick="document.getElementById('books').scrollIntoView({behavior: 'smooth'})">
                 <span class="text-3xl bounce">↓</span>
             </div>
         </div>
     </section>
 
-    <!-- Rest of the content remains exactly the same -->
-    <!-- ABOUT SECTION -->
-    <section id="about" class="fade-in py-20 md:py-28 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl text-center">
-            <h2 class="playfair text-3xl md:text-4xl font-bold text-gray-900 mb-8">About This Project</h2>
-            <div class="prose prose-lg mx-auto text-gray-600">
-                <p class="text-xl leading-relaxed">
-                    This is a work of speculative fiction that reimagines Uganda's history—what if our nation had been built on the foundation of education, critical thinking, and intellectual pursuit rather than military might?
-                </p>
-                <blockquote class="border-l-4 border-amber-500 pl-6 my-8 italic text-2xl text-gray-700">
-                    "A nation that builds schools instead of barracks will outlive any empire built on fear."
-                </blockquote>
-                <p class="text-lg">
-                    Through eleven chapters, we explore the alternate timeline where thinkers, not soldiers, shaped our destiny. Each chapter presents a different facet of this imagined Uganda—its challenges, triumphs, and the eternal struggle between wisdom and power.
-                </p>
+    <!-- BOOKS SECTION -->
+    <section id="books" class="fade-in py-20 md:py-28 bg-gradient-to-br from-gray-50 to-amber-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="playfair text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">The Books</h2>
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">Explore our collection of alternate histories and time travel stories</p>
+            
+            <!-- Book 1: Minds Before Guns -->
+            <div class="book-card bg-white rounded-2xl p-8 shadow-lg mb-12 border-l-4 border-amber-500">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <div class="bg-gradient-to-br from-amber-400 to-rose-400 rounded-2xl p-8 text-center text-white h-full flex flex-col justify-center">
+                            <h3 class="playfair text-3xl font-bold mb-4">Minds Before Guns</h3>
+                            <p class="text-lg opacity-90">What If Uganda Had Been Built by Thinkers, Not Soldiers?</p>
+                            <div class="mt-6">
+                                <span class="bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-semibold">11 Chapters + Epilogue</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h4 class="playfair text-xl font-bold text-gray-900 mb-4">Chapters</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+                            <a href="chapter1.html" class="block py-2 px-4 bg-amber-50 hover:bg-amber-100 rounded-lg transition-colors text-gray-700 hover:text-amber-800">1. The Ignorant Freedom</a>
+                            <a href="chapter2.html" class="block py-2 px-4 bg-amber-50 hover:bg-amber-100 rounded-lg transition-colors text-gray-700 hover:text-amber-800">2. The First Cracks in the Dream</a>
+                            <a href="chapter3.html" class="block py-2 px-4 bg-amber-50 hover:bg-amber-100 rounded-lg transition-colors text-gray-700 hover:text-amber-800">3. The People's Awakening</a>
+                            <a href="chapter4.html" class="block py-2 px-4 bg-amber-50 hover:bg-amber-100 rounded-lg transition-colors text-gray-700 hover:text-amber-800">4. The Countercurrent</a>
+                            <a href="chapter5.html" class="block py-2 px-4 bg-amber-50 hover:bg-amber-100 rounded-lg transition-colors text-gray-700 hover:text-amber-800">5. The Capital of Dust and Dreams</a>
+                            <a href="chapter6.html" class="block py-2 px-4 bg-amber-50 hover:bg-amber-100 rounded-lg transition-colors text-gray-700 hover:text-amber-800">6. When Silence Becomes Blood</a>
+                            <a href="chapter7.html" class="block py-2 px-4 bg-amber-50 hover:bg-amber-100 rounded-lg transition-colors text-gray-700 hover:text-amber-800">7. Shadows Over Isiba</a>
+                            <a href="chapter8.html" class="block py-2 px-4 bg-amber-50 hover:bg-amber-100 rounded-lg transition-colors text-gray-700 hover:text-amber-800">8. The Heir</a>
+                            <a href="chapter9.html" class="block py-2 px-4 bg-amber-50 hover:bg-amber-100 rounded-lg transition-colors text-gray-700 hover:text-amber-800">9. The Excavation</a>
+                            <a href="chapter10.html" class="block py-2 px-4 bg-amber-50 hover:bg-amber-100 rounded-lg transition-colors text-gray-700 hover:text-amber-800">10. The Long Walk</a>
+                            <a href="epilogue.html" class="block py-2 px-4 bg-amber-100 hover:bg-amber-200 rounded-lg transition-colors text-amber-900 font-semibold">Epilogue: The Buried Seed</a>
+                        </div>
+                        <p class="text-gray-600 italic border-l-4 border-amber-400 pl-4 py-2">
+                            "A nation that builds schools instead of barracks will outlive any empire built on fear."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book 2: Watchers -->
+            <div class="book-card bg-white rounded-2xl p-8 shadow-lg border-l-4 border-purple-500">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="md:w-1/3">
+                        <div class="time-travel-gradient rounded-2xl p-8 text-center text-white h-full flex flex-col justify-center">
+                            <h3 class="playfair text-3xl font-bold mb-4">Watchers</h3>
+                            <p class="text-lg opacity-90">Afrofuturist Time Travel Project</p>
+                            <div class="mt-6">
+                                <span class="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold">7 Chapters</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <h4 class="playfair text-xl font-bold text-gray-900 mb-4">Chapters</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-6">
+                            <a href="watchers-CHAPTER1.html" class="block py-2 px-4 bg-purple-50 hover:bg-purple-100 rounded-lg transition-colors text-gray-700 hover:text-purple-800">1. The Landing</a>
+                            <a href="watchers-CHAPTER2.html" class="block py-2 px-4 bg-purple-50 hover:bg-purple-100 rounded-lg transition-colors text-gray-700 hover:text-purple-800">2. The Great Lakes</a>
+                            <a href="watchers-CHAPTER3.html" class="block py-2 px-4 bg-purple-50 hover:bg-purple-100 rounded-lg transition-colors text-gray-700 hover:text-purple-800">3. The Kingdom</a>
+                            <a href="watchers-CHAPTER4.html" class="block py-2 px-4 bg-purple-50 hover:bg-purple-100 rounded-lg transition-colors text-gray-700 hover:text-purple-800">4. The Coast</a>
+                            <a href="watchers-CHAPTER5.html" class="block py-2 px-4 bg-purple-50 hover:bg-purple-100 rounded-lg transition-colors text-gray-700 hover:text-purple-800">5. The Last Tongues</a>
+                            <a href="watchers-CHAPTER6.html" class="block py-2 px-4 bg-purple-50 hover:bg-purple-100 rounded-lg transition-colors text-gray-700 hover:text-purple-800">6. The The Last Three</a>
+                            <a href="watchers-CHAPTER7.html" class="block py-2 px-4 bg-purple-100 hover:bg-purple-200 rounded-lg transition-colors text-gray-700 hover:text-purple-800">7. The Excavation</a>
+                            <a href="watchers-CHAPTER8.html" class="block py-2 px-4 bg-purple-100 hover:bg-purple-100 rounded-lg transition-colors text-gray-700 hover:text-purple-800">8. The Great Construction</a>
+                            <a href="watchers-CHAPTER9.html" class="block py-2 px-4 bg-purple-50 hover:bg-purple-100 rounded-lg transition-colors text-gray-700 hover:text-purple-800">9. The New Uganda</a>
+                            <a href="watchers-CHAPTER10.html" class="block py-2 px-4 bg-purple-100 hover:bg-purple-100 rounded-lg transition-colors text-purple-900 font-semibold">10. The Pilgrimage</a>
+                        </div>
+                        <p class="text-gray-600 italic border-l-4 border-purple-400 pl-4 py-2">
+                            "We came from tomorrow to change yesterday. We failed. But we failed in the attempt, not the observation."
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- CHAPTERS GRID -->
-    <section id="chapters" class="fade-in py-20 md:py-28 bg-gradient-to-br from-gray-50 to-amber-50">
-        <div class="container mx-auto px-4 max-w-6xl">
-            <h2 class="playfair text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">The Chapters</h2>
-            <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">Journey through the alternate history of Uganda, one chapter at a time</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Chapter 1 -->
-                <div class="chapter-card bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="flex items-start justify-between mb-4">
-                        <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-semibold">Chapter 1</span>
-                        <span class="text-amber-600 text-2xl">📖</span>
-                    </div>
-                    <h3 class="playfair text-xl font-bold text-gray-900 mb-3">The Ignorant Freedom</h3>
-                    <p class="text-gray-600 mb-4">The dawn of independence and the choices that shaped a nation's path</p>
-                    <a href="chapter1.html" class="block w-full bg-amber-500 hover:bg-amber-600 text-white py-2 px-4 rounded-lg transition-colors font-semibold text-center">
-                        Read Chapter
-                    </a>
-                </div>
-
-                <!-- Chapter 2 -->
-                <div class="chapter-card bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="flex items-start justify-between mb-4">
-                        <span class="bg-rose-100 text-rose-800 px-3 py-1 rounded-full text-sm font-semibold">Chapter 2</span>
-                        <span class="text-rose-600 text-2xl">⚡</span>
-                    </div>
-                    <h3 class="playfair text-xl font-bold text-gray-900 mb-3">The First Cracks in the Dream</h3>
-                    <p class="text-gray-600 mb-4">When idealism meets the hard reality of nation-building</p>
-                    <a href="chapter2.html" class="block w-full bg-rose-500 hover:bg-rose-600 text-white py-2 px-4 rounded-lg transition-colors font-semibold text-center">
-                        Read Chapter
-                    </a>
-                </div>
-
-                <!-- Chapter 3 -->
-                <div class="chapter-card bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="flex items-start justify-between mb-4">
-                        <span class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-semibold">Chapter 3</span>
-                        <span class="text-emerald-600 text-2xl">🌅</span>
-                    </div>
-                    <h3 class="playfair text-xl font-bold text-gray-900 mb-3">The People's Awakening</h3>
-                    <p class="text-gray-600 mb-4">The grassroots movement that challenged the status quo</p>
-                    <a href="chapter3.html" class="block w-full bg-emerald-500 hover:bg-emerald-600 text-white py-2 px-4 rounded-lg transition-colors font-semibold text-center">
-                        Read Chapter
-                    </a>
-                </div>
-
-                <!-- Chapter 4 -->
-                <div class="chapter-card bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="flex items-start justify-between mb-4">
-                        <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm font-semibold">Chapter 4</span>
-                        <span class="text-indigo-600 text-2xl">🌀</span>
-                    </div>
-                    <h3 class="playfair text-xl font-bold text-gray-900 mb-3">The Countercurrent</h3>
-                    <p class="text-gray-600 mb-4">Forces that resist change and the battle for progress</p>
-                    <a href="chapter4.html" class="block w-full bg-indigo-500 hover:bg-indigo-600 text-white py-2 px-4 rounded-lg transition-colors font-semibold text-center">
-                        Read Chapter
-                    </a>
-                </div>
-
-                <!-- Chapter 5 -->
-                <div class="chapter-card bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="flex items-start justify-between mb-4">
-                        <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-semibold">Chapter 5</span>
-                        <span class="text-amber-600 text-2xl">🏛️</span>
-                    </div>
-                    <h3 class="playfair text-xl font-bold text-gray-900 mb-3">The Capital of Dust and Dreams</h3>
-                    <p class="text-gray-600 mb-4">Building the physical and ideological heart of a new Uganda</p>
-                    <a href="chapter5.html" class="block w-full bg-amber-500 hover:bg-amber-600 text-white py-2 px-4 rounded-lg transition-colors font-semibold text-center">
-                        Read Chapter
-                    </a>
-                </div>
-
-                <!-- Chapter 6 -->
-                <div class="chapter-card bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="flex items-start justify-between mb-4">
-                        <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-semibold">Chapter 6</span>
-                        <span class="text-red-600 text-2xl">💔</span>
-                    </div>
-                    <h3 class="playfair text-xl font-bold text-gray-900 mb-3">When Silence Becomes Blood</h3>
-                    <p class="text-gray-600 mb-4">The breaking point where ideas confront violence</p>
-                    <a href="chapter6.html" class="block w-full bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded-lg transition-colors font-semibold text-center">
-                        Read Chapter
-                    </a>
-                </div>
-
-                <!-- Chapter 7 -->
-                <div class="chapter-card bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="flex items-start justify-between mb-4">
-                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold">Chapter 7</span>
-                        <span class="text-gray-600 text-2xl">🌑</span>
-                    </div>
-                    <h3 class="playfair text-xl font-bold text-gray-900 mb-3">Shadows Over Isiba</h3>
-                    <p class="text-gray-600 mb-4">The darkness that threatens to consume the dream</p>
-                    <a href="chapter7.html" class="block w-full bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded-lg transition-colors font-semibold text-center">
-                        Read Chapter
-                    </a>
-                </div>
-
-                <!-- Chapter 8 -->
-                <div class="chapter-card bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="flex items-start justify-between mb-4">
-                        <span class="bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm font-semibold">Chapter 8</span>
-                        <span class="text-slate-600 text-2xl">👑</span>
-                    </div>
-                    <h3 class="playfair text-xl font-bold text-gray-900 mb-3">The Heir</h3>
-                    <p class="text-gray-600 mb-4">A new generation rises to carry the torch forward</p>
-                    <a href="chapter8.html" class="block w-full bg-slate-500 hover:bg-slate-600 text-white py-2 px-4 rounded-lg transition-colors font-semibold text-center">
-                        Read Chapter
-                    </a>
-                </div>
-
-                <!-- Chapter 9 -->
-                <div class="chapter-card bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="flex items-start justify-between mb-4">
-                        <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-semibold">Chapter 9</span>
-                        <span class="text-yellow-600 text-2xl">⛏️</span>
-                    </div>
-                    <h3 class="playfair text-xl font-bold text-gray-900 mb-3">The Excavation</h3>
-                    <p class="text-gray-600 mb-4">Unearthing the buried truths of the past</p>
-                    <a href="chapter9.html" class="block w-full bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-lg transition-colors font-semibold text-center">
-                        Read Chapter
-                    </a>
-                </div>
-
-                <!-- Chapter 10 -->
-                <div class="chapter-card bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="flex items-start justify-between mb-4">
-                        <span class="bg-stone-100 text-stone-800 px-3 py-1 rounded-full text-sm font-semibold">Chapter 10</span>
-                        <span class="text-stone-600 text-2xl">🚶</span>
-                    </div>
-                    <h3 class="playfair text-xl font-bold text-gray-900 mb-3">The Long Walk</h3>
-                    <p class="text-gray-600 mb-4">The enduring journey toward a better future</p>
-                    <a href="chapter10.html" class="block w-full bg-stone-500 hover:bg-stone-600 text-white py-2 px-4 rounded-lg transition-colors font-semibold text-center">
-                        Read Chapter
-                    </a>
-                </div>
-
-                <!-- Epilogue -->
-                <div class="chapter-card bg-white rounded-2xl p-6 shadow-lg">
-                    <div class="flex items-start justify-between mb-4">
-                        <span class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm font-semibold">Epilogue</span>
-                        <span class="text-gray-600 text-2xl">🌱</span>
-                    </div>
-                    <h3 class="playfair text-xl font-bold text-gray-900 mb-3">The Buried Seed</h3>
-                    <p class="text-gray-600 mb-4">What remains when the struggle is over</p>
-                    <a href="epilogue.html" class="block w-full bg-gray-600 hover:bg-gray-700 text-white py-2 px-4 rounded-lg transition-colors font-semibold text-center">
-                        Read Epilogue
-                    </a>
-                </div>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="fade-in py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="playfair text-3xl md:text-4xl font-bold text-gray-900 mb-8">About This Library</h2>
+            <div class="prose prose-lg mx-auto text-gray-600">
+                <p class="text-xl leading-relaxed">
+                    This digital library houses works of speculative fiction that explore alternate histories and reimagine our world through different lenses.
+                </p>
+                <blockquote class="border-l-4 border-amber-500 pl-6 my-8 italic text-2xl text-gray-700">
+                    "History is not what happened, but what survives the shipwrecks of time and the distortions of the victors."
+                </blockquote>
+                <p class="text-lg">
+                    Each book in this collection asks a different "what if" question, exploring how small changes in history could lead to dramatically different presents. From Uganda built by thinkers instead of soldiers, to time travelers attempting to change the course of African history, these stories invite us to reconsider the paths we've taken.
+                </p>
             </div>
         </div>
     </section>
@@ -325,13 +231,13 @@
                     <div class="flex-1">
                         <h2 class="playfair text-3xl md:text-4xl font-bold text-gray-900 mb-4">About the Author</h2>
                         <p class="text-xl font-semibold text-amber-700 mb-2">Esmaela Tasneem Abani Kazi</p>
-                        <p class="text-lg text-gray-600 italic mb-6">A Ugandan who refuses to stop asking "what if."</p>
+                        <p class="text-lg text-gray-600 italic mb-6">A storyteller who explores the roads not taken.</p>
                         <div class="prose prose-lg text-gray-600">
                             <p class="mb-4">
-                                This project is born from a deep love for Uganda and a persistent curiosity about the paths not taken. What if our nation's story had been written by philosophers instead of generals? By teachers instead of soldiers?
+                                These works are born from a deep curiosity about history's turning points and the paths not taken. What if different choices had been made? What if different values had prevailed?
                             </p>
                             <p>
-                                Through this alternate history, I explore the Uganda that lives in our collective imagination—the one built on wisdom, education, and the relentless pursuit of knowledge.
+                                Through speculative fiction, I explore the worlds that could have been—and perhaps, the worlds that still could be if we dare to imagine differently.
                             </p>
                         </div>
                     </div>
@@ -348,11 +254,11 @@
         <div class="container mx-auto px-4 max-w-4xl text-center">
             <div class="glass-dark rounded-3xl p-12 md:p-16">
                 <blockquote class="playfair text-3xl md:text-4xl font-bold italic mb-8 leading-tight">
-                    "You cannot undo history. But you can refuse to repeat it."
+                    "The most dangerous stories are the ones we never tell."
                 </blockquote>
-                <p class="text-xl md:text-2xl font-light mb-6">How would you rebuild our nation?</p>
+                <p class="text-xl md:text-2xl font-light mb-6">What stories would you tell about the world that could have been?</p>
                 <p class="text-lg opacity-80 max-w-2xl mx-auto">
-                    This is not just a story about Uganda's past. It's an invitation to imagine Uganda's future—one where minds truly come before guns.
+                    This library is an invitation to imagine, to question, and to explore the infinite possibilities of history and humanity.
                 </p>
             </div>
         </div>
@@ -364,8 +270,8 @@
             <div class="glass-dark rounded-2xl p-8 mb-8">
                 <div class="flex flex-col md:flex-row justify-between items-start gap-8">
                     <div class="flex-1">
-                        <p class="text-xl font-semibold mb-2">Built by <strong class="text-amber-400">Esmaela Tasneem Abani Kazi</strong></p>
-                        <p class="text-gray-400 italic">A Ugandan who refuses to stop asking "what if."</p>
+                        <p class="text-xl font-semibold mb-2">Library by <strong class="text-amber-400">Esmaela Tasneem Abani Kazi</strong></p>
+                        <p class="text-gray-400 italic">Exploring the infinite possibilities of history</p>
                     </div>
                     
                     <div class="flex flex-col md:flex-row gap-8">
@@ -380,7 +286,7 @@
                         </div>
                         
                         <div class="our channels">
-                            <h4 class="font-bold text-lg mb-4 text-amber-300">Our channels.</h4>
+                            <h4 class="font-bold text-lg mb-4 text-amber-300">Our Channels</h4>
                             <div class="flex flex-col space-y-2">
                                 <a href="https://spotlight-blog.vercel.app" target="_blank" class="text-gray-300 hover:text-amber-400 transition-colors">SPOTLIGHT-BLOG</a>
                                 <a href="https://globalraiders-site.netlify.app" target="_blank" class="text-gray-300 hover:text-amber-400 transition-colors">GLOBALRAIDERS</a>
@@ -391,7 +297,7 @@
             </div>
             
             <div class="text-center pt-6 border-t border-gray-800">
-                <p class="text-gray-400">&copy; 2025 Minds Before Guns. This is fiction. This is hope.</p>
+                <p class="text-gray-400">&copy; 2025 Library of Alternate Histories. All stories are works of fiction.</p>
             </div>
         </div>
     </footer>
@@ -450,7 +356,7 @@
 
         // ===== START EVERYTHING =====
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('🚀 Homepage loaded with PERFECT DARK NAVIGATION!');
+            console.log('📚 Library homepage loaded!');
             setTimeout(initializeAnimations, 100);
         });
     </script>
