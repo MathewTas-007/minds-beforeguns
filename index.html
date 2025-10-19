@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Library of Alternate Histories and Time Travel Stories">
-    <title>Library of Alternate Histories</title>
+    <meta name="description" content="Digital Library Global - Platform for alternate histories, speculative fiction, and stories that challenge the world as we know it">
+    <title>Digital Library Global</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,10 +58,13 @@
 </head>
 <body class="bg-gradient-to-br from-amber-50 to-rose-50 text-gray-800">
 
-    <!-- MOBILE NAVIGATION -->
+    <!-- NAVIGATION -->
     <nav class="fixed top-0 left-0 right-0 z-50 bg-gray-900 backdrop-blur-md border-b border-gray-700 shadow-lg">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="playfair text-xl font-bold text-white">Library of Alternate Histories</a>
+            <a href="#" class="playfair text-xl font-bold text-white flex items-center gap-2">
+                <span class="text-2xl">🌍</span>
+                Digital Library Global
+            </a>
             
             <div class="hamburger md:hidden flex flex-col space-y-1.5 cursor-pointer p-2">
                 <span class="w-6 h-0.5 bg-white transition-all"></span>
@@ -73,7 +76,6 @@
                 <a href="#books" class="text-gray-300 hover:text-amber-400 transition-colors">Books</a>
                 <a href="#for-authors" class="text-gray-300 hover:text-amber-400 transition-colors">For Authors</a>
                 <a href="#about" class="text-gray-300 hover:text-amber-400 transition-colors">About</a>
-                <a href="#author" class="text-gray-300 hover:text-amber-400 transition-colors">Author</a>
             </div>
         </div>
 
@@ -92,7 +94,6 @@
                     <a href="#books" class="block py-3 text-lg text-gray-300 hover:text-amber-400 transition-colors border-b border-gray-700">Books</a>
                     <a href="#for-authors" class="block py-3 text-lg text-gray-300 hover:text-amber-400 transition-colors border-b border-gray-700">For Authors</a>
                     <a href="#about" class="block py-3 text-lg text-gray-300 hover:text-amber-400 transition-colors border-b border-gray-700">About</a>
-                    <a href="#author" class="block py-3 text-lg text-gray-300 hover:text-amber-400 transition-colors border-b border-gray-700">Author</a>
                 </div>
             </div>
         </div>
@@ -107,11 +108,17 @@
         </div>
         
         <div class="glass rounded-2xl p-8 md:p-12 max-w-3xl mx-4 text-center text-white relative z-10">
-            <h1 class="playfair text-4xl md:text-6xl font-bold mb-6">Library of Alternate Histories</h1>
-            <p class="text-xl md:text-2xl font-light mb-8">Exploring the Worlds That Could Have Been</p>
-            <p class="text-lg opacity-90 mb-8">A collection of speculative fiction exploring different paths through history</p>
-            <div class="scroll-indicator mt-12 cursor-pointer" onclick="document.getElementById('books').scrollIntoView({behavior: 'smooth'})">
-                <span class="text-3xl bounce">↓</span>
+            <div class="text-6xl mb-4">🌍</div>
+            <h1 class="playfair text-4xl md:text-6xl font-bold mb-6">Digital Library Global</h1>
+            <p class="text-xl md:text-2xl font-light mb-4">A Platform for Stories That Challenge History</p>
+            <p class="text-lg opacity-90 mb-8">No gatekeepers. No barriers. Just powerful stories from writers worldwide.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#books" class="bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-8 rounded-full transition-all">
+                    Browse Books
+                </a>
+                <a href="#for-authors" class="bg-white/20 hover:bg-white/30 text-white font-bold py-3 px-8 rounded-full transition-all backdrop-blur">
+                    Publish With Us
+                </a>
             </div>
         </div>
     </section>
@@ -119,8 +126,8 @@
     <!-- BOOKS SECTION -->
     <section id="books" class="fade-in py-20 md:py-28 bg-gradient-to-br from-gray-50 to-amber-50">
         <div class="container mx-auto px-4 max-w-6xl">
-            <h2 class="playfair text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">The Books</h2>
-            <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">Explore our collection of alternate histories and time travel stories</p>
+            <h2 class="playfair text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">Featured Books</h2>
+            <p class="text-xl text-center text-gray-600 mb-12 max-w-2xl mx-auto">Explore alternate histories, speculative futures, and stories that ask "what if?"</p>
             
             <!-- Book 1: Minds Before Guns -->
             <div class="book-card bg-white rounded-2xl p-8 shadow-lg mb-12 border-l-4 border-amber-500">
@@ -132,6 +139,7 @@
                             <div class="mt-6">
                                 <span class="bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-semibold">11 Chapters + Epilogue</span>
                             </div>
+                            <p class="text-sm mt-4 opacity-80">by Esmaela Tasneem Abani Kazi</p>
                         </div>
                     </div>
                     <div class="md:w-2/3">
@@ -166,6 +174,7 @@
                             <div class="mt-6">
                                 <span class="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold">10 Chapters</span>
                             </div>
+                            <p class="text-sm mt-4 opacity-80">by Esmaela Tasneem Abani Kazi</p>
                         </div>
                     </div>
                     <div class="md:w-2/3">
@@ -191,81 +200,93 @@
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="fade-in py-20 md:py-28 bg-white">
-        <div class="container mx-auto px-4 max-w-4xl text-center">
-            <h2 class="playfair text-3xl md:text-4xl font-bold text-gray-900 mb-8">About This Library</h2>
-            <div class="prose prose-lg mx-auto text-gray-600">
-                <p class="text-xl leading-relaxed">
-                    This digital library houses works of speculative fiction that explore alternate histories and reimagine our world through different lenses.
-                </p>
-                <blockquote class="border-l-4 border-amber-500 pl-6 my-8 italic text-2xl text-gray-700">
-                    "History is not what happened, but what survives the shipwrecks of time and the distortions of the victors."
-                </blockquote>
-                <p class="text-lg">
-                    Each book in this collection asks a different "what if" question, exploring how small changes in history could lead to dramatically different presents. From Uganda built by thinkers instead of soldiers, to time travelers attempting to change the course of African history, these stories invite us to reconsider the paths we've taken.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- AUTHOR SECTION -->
-    <section id="author" class="fade-in py-20 md:py-28 bg-gradient-to-br from-amber-100 to-yellow-100">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl">
-                <div class="flex flex-col md:flex-row items-center gap-8">
-                    <div class="flex-1">
-                        <h2 class="playfair text-3xl md:text-4xl font-bold text-gray-900 mb-4">About the Author</h2>
-                        <p class="text-xl font-semibold text-amber-700 mb-2">Esmaela Tasneem Abani Kazi</p>
-                        <p class="text-lg text-gray-600 italic mb-6">A storyteller who explores the roads not taken.</p>
-                        <div class="prose prose-lg text-gray-600">
-                            <p class="mb-4">
-                                These works are born from a deep curiosity about history's turning points and the paths not taken. What if different choices had been made? What if different values had prevailed?
-                            </p>
-                            <p>
-                                Through speculative fiction, I explore the worlds that could have been—and perhaps, the worlds that still could be if we dare to imagine differently.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="w-48 h-48 bg-gradient-to-br from-amber-400 to-rose-400 rounded-full flex items-center justify-center shadow-2xl">
-                        <span class="text-white text-6xl">✍️</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- FOR AUTHORS SECTION -->
     <section id="for-authors" class="fade-in py-20 md:py-28 bg-gradient-to-br from-indigo-900 to-purple-900 text-white">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <div class="glass-dark rounded-3xl p-8 md:p-12 text-center">
-                <h2 class="playfair text-3xl md:text-4xl font-bold mb-6">Are You a Writer?</h2>
-                <p class="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto">
-                    This library welcomes stories that challenge, provoke, and reimagine history.
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="text-center mb-12">
+                <h2 class="playfair text-4xl md:text-5xl font-bold mb-6">Publish Your Story With Us</h2>
+                <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto">
+                    Digital Library Global is a platform for writers whose stories challenge, provoke, and reimagine the world.
                 </p>
-                <div class="grid md:grid-cols-3 gap-6 mb-8 text-left">
-                    <div class="bg-white/10 rounded-xl p-6">
-                        <div class="text-4xl mb-4">📚</div>
-                        <h3 class="font-bold text-lg mb-2">No Gatekeepers</h3>
-                        <p class="text-sm opacity-90">Your story deserves to be read. No traditional publishing barriers.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white/10 backdrop-blur rounded-2xl p-8 text-center">
+                    <div class="text-5xl mb-4">📚</div>
+                    <h3 class="font-bold text-xl mb-3">No Gatekeepers</h3>
+                    <p class="opacity-90">Traditional publishers say no? We say your story deserves to exist. No barriers, no rejections based on "market trends."</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-2xl p-8 text-center">
+                    <div class="text-5xl mb-4">🚀</div>
+                    <h3 class="font-bold text-xl mb-3">Free Forever</h3>
+                    <p class="opacity-90">We host your work. Beautiful design. Fast loading. Mobile-friendly. Zero cost to you. Zero cost to readers. Forever.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-2xl p-8 text-center">
+                    <div class="text-5xl mb-4">🌍</div>
+                    <h3 class="font-bold text-xl mb-3">Global Reach</h3>
+                    <p class="opacity-90">Your work goes live instantly. Accessible worldwide. Readers from anywhere can discover your story. No distribution deals needed.</p>
+                </div>
+            </div>
+
+            <div class="glass-dark rounded-3xl p-8 md:p-12 text-center">
+                <h3 class="text-2xl font-bold mb-4">What We're Looking For</h3>
+                <div class="grid md:grid-cols-2 gap-6 mb-8 text-left">
+                    <div>
+                        <h4 class="font-bold mb-2">✓ Alternate Histories</h4>
+                        <p class="text-sm opacity-90">What if different choices were made? What if history went another way?</p>
                     </div>
-                    <div class="bg-white/10 rounded-xl p-6">
-                        <div class="text-4xl mb-4">🚀</div>
-                        <h3 class="font-bold text-lg mb-2">Free Hosting</h3>
-                        <p class="text-sm opacity-90">Beautiful, fast, mobile-friendly. Just write, we'll handle the rest.</p>
+                    <div>
+                        <h4 class="font-bold mb-2">✓ Speculative Fiction</h4>
+                        <p class="text-sm opacity-90">Stories that imagine different futures, different realities, different possibilities.</p>
                     </div>
-                    <div class="bg-white/10 rounded-xl p-6">
-                        <div class="text-4xl mb-4">🌍</div>
-                        <h3 class="font-bold text-lg mb-2">Global Reach</h3>
-                        <p class="text-sm opacity-90">Your work, accessible to readers worldwide. Instantly.</p>
+                    <div>
+                        <h4 class="font-bold mb-2">✓ Political Fiction</h4>
+                        <p class="text-sm opacity-90">Stories that challenge power, question systems, and imagine better governance.</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2">✓ Stories That Provoke</h4>
+                        <p class="text-sm opacity-90">Work that makes readers think, question, and possibly get uncomfortable. We don't publish comfort food.</p>
                     </div>
                 </div>
-                <p class="text-lg mb-6 opacity-90">
-                    Interested in publishing with us? We're accepting submissions for works that explore alternate histories, speculative futures, and stories that ask "what if?"
+                
+                <p class="text-lg mb-6">
+                    Interested? Send us your manuscript, synopsis, or just an idea. We review everything personally.
                 </p>
-                <a href="mailto:esmaelaabani@gmail.com?subject=Author Submission Inquiry" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-3 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg">
-                    Get in Touch
+                <a href="mailto:mathewtas001@gmail.com?subject=Author Submission - Digital Library Global" class="inline-block bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold py-4 px-10 rounded-full transition-all transform hover:scale-105 shadow-xl">
+                    Submit Your Work
                 </a>
+                <p class="text-sm mt-4 opacity-70">Response time: 7-14 days</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="fade-in py-20 md:py-28 bg-white">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="playfair text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">About Digital Library Global</h2>
+            <div class="prose prose-lg mx-auto text-gray-600">
+                <p class="text-xl leading-relaxed mb-6">
+                    We are a platform for stories that traditional publishing ignores, rejects, or waters down.
+                </p>
+                <p class="text-lg mb-6">
+                    Founded on the belief that powerful stories shouldn't need permission to exist, Digital Library Global hosts works of speculative fiction, alternate history, and political imagination from writers worldwide.
+                </p>
+                <blockquote class="border-l-4 border-amber-500 pl-6 my-8 italic text-2xl text-gray-700">
+                    "The most dangerous stories are the ones we never tell."
+                </blockquote>
+                <p class="text-lg mb-6">
+                    We don't curate for "marketability." We curate for impact. For quality. For stories that challenge readers to think differently about history, power, and possibility.
+                </p>
+                <p class="text-lg">
+                    If you're a reader: Browse freely. Everything is free. Forever.<br>
+                    If you're a writer: Submit your work. No fees. No contracts. Just storytelling.
+                </p>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-lg text-gray-700 mb-4">Founded and curated by</p>
+                <p class="text-2xl font-bold text-amber-700">Esmaela Tasneem Abani Kazi</p>
+                <p class="text-gray-600 italic">Author, builder, believer in stories that matter</p>
             </div>
         </div>
     </section>
@@ -275,11 +296,11 @@
         <div class="container mx-auto px-4 max-w-4xl text-center">
             <div class="glass-dark rounded-3xl p-12 md:p-16">
                 <blockquote class="playfair text-3xl md:text-4xl font-bold italic mb-8 leading-tight">
-                    "The most dangerous stories are the ones we never tell."
+                    "History is not what happened.<br>It's what we choose to remember."
                 </blockquote>
-                <p class="text-xl md:text-2xl font-light mb-6">What stories would you tell about the world that could have been?</p>
+                <p class="text-xl md:text-2xl font-light mb-6">What stories will you choose to tell?</p>
                 <p class="text-lg opacity-80 max-w-2xl mx-auto">
-                    This library is an invitation to imagine, to question, and to explore the infinite possibilities of history and humanity.
+                    This library is an invitation to imagine, to question, and to explore the infinite possibilities of what could have been—and what still could be.
                 </p>
             </div>
         </div>
@@ -291,23 +312,26 @@
             <div class="glass-dark rounded-2xl p-8 mb-8">
                 <div class="flex flex-col md:flex-row justify-between items-start gap-8">
                     <div class="flex-1">
-                        <p class="text-xl font-semibold mb-2">Library by <strong class="text-amber-400">Esmaela Tasneem Abani Kazi</strong></p>
-                        <p class="text-gray-400 italic">Exploring the infinite possibilities of history</p>
+                        <p class="text-2xl font-bold mb-2 flex items-center gap-2">
+                            <span>🌍</span>
+                            <span class="text-amber-400">Digital Library Global</span>
+                        </p>
+                        <p class="text-gray-400 italic mb-4">A platform for stories that matter</p>
+                        <p class="text-sm text-gray-500">Founded & curated by Esmaela Tasneem Abani Kazi</p>
                     </div>
                     
                     <div class="flex flex-col md:flex-row gap-8">
-                        <div class="social-links">
+                        <div>
                             <h4 class="font-bold text-lg mb-4 text-amber-300">Connect</h4>
                             <div class="flex flex-col space-y-2">
+                                <a href="mailto:mathewtas001@gmail.com" class="text-gray-300 hover:text-amber-400 transition-colors">Email</a>
                                 <a href="#" target="_blank" class="text-gray-300 hover:text-amber-400 transition-colors">Twitter/X</a>
                                 <a href="#" target="_blank" class="text-gray-300 hover:text-amber-400 transition-colors">LinkedIn</a>
-                                <a href="#" target="_blank" class="text-gray-300 hover:text-amber-400 transition-colors">GitHub</a>
-                                <a href="mathewtas001@gmail.com" class="text-gray-300 hover:text-amber-400 transition-colors">Email</a>
                             </div>
                         </div>
                         
-                        <div class="our channels">
-                            <h4 class="font-bold text-lg mb-4 text-amber-300">Our Channels</h4>
+                        <div>
+                            <h4 class="font-bold text-lg mb-4 text-amber-300">Our Network</h4>
                             <div class="flex flex-col space-y-2">
                                 <a href="https://spotlight-blog.vercel.app" target="_blank" class="text-gray-300 hover:text-amber-400 transition-colors">SPOTLIGHT-BLOG</a>
                                 <a href="https://globalraiders-site.netlify.app" target="_blank" class="text-gray-300 hover:text-amber-400 transition-colors">GLOBALRAIDERS</a>
@@ -318,7 +342,7 @@
             </div>
             
             <div class="text-center pt-6 border-t border-gray-800">
-                <p class="text-gray-400">&copy; 2025 Library of Alternate Histories. All stories are works of fiction.</p>
+                <p class="text-gray-400">&copy; 2025 Digital Library Global. All stories remain property of their authors.</p>
             </div>
         </div>
     </footer>
@@ -372,7 +396,7 @@
         }
 
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('📚 Library homepage loaded!');
+            console.log('🌍 Digital Library Global loaded!');
             setTimeout(initializeAnimations, 100);
         });
     </script>
