@@ -1,3 +1,5 @@
+# URL: **https://digital-libraryglobal.netlify.app/**
+
 # 📚 Library of Alternate Histories
 
 > **An open platform for writers worldwide to publish speculative fiction, alternate histories, and time travel stories without gatekeepers.**
@@ -42,7 +44,7 @@ A free, web-based library hosting literature with:
 4. Author photo (optional)
 
 ### **Process:**
-1. Email your files to: **charleskhamis@globalraiders.org**
+1. Email your files to: **mathew001@gmail.com**
 2. We review (usually within 48 hours)
 3. We add your book to the platform
 4. You're published (typically within 3-5 days)
@@ -162,7 +164,7 @@ We say: *"Your story needs readers. We'll connect you."*
 
 ## 📧 **Contact**
 
-- **Email:** charleskhamis@globalraiders.org
+- **Email:** mathew001@gmail.com
 - **Platform:** [Your Domain Here]
 - **Related Projects:**
   - [SPOTLIGHT-BLOG](https://spotlight-blog.vercel.app)
