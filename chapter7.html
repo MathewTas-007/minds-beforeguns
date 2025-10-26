@@ -1,288 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shadows Over Isiba - Minds Before Guns</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .playfair {
-            font-family: 'Playfair Display', serif;
-        }
-        .glass-morphism {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        .uganda-gradient {
-            background: linear-gradient(135deg, #000000 0%, #FFD100 50%, #D90000 100%);
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
 </head>
-<body class="uganda-gradient min-h-screen text-gray-800">
-    <!-- Mobile Hamburger Menu -->
-    <nav class="fixed w-full z-50">
-        <div class="glass-morphism rounded-b-2xl shadow-lg">
-            <div class="container mx-auto px-4 py-3">
-                <div class="flex justify-between items-center">
-                    <a href="index.html" class="playfair text-xl font-bold text-white">MINDS BEFORE GUNS</a>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div>
+            <div>
+                <div>
+                    <a href="index.html">MINDS BEFORE GUNS</a>
                     
                     <!-- Mobile menu button -->
-                    <button id="menuBtn" class="md:hidden text-white focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
+                    <button id="menuBtn">
+                        ☰
                     </button>
 
                     <!-- Desktop Menu -->
-                    <div class="hidden md:flex space-x-6">
-                        <a href="index.html" class="text-white hover:text-yellow-300 transition">Home</a>
-                        <a href="chapter1.html" class="text-white hover:text-yellow-300 transition">Ch. 1</a>
-                        <a href="chapter2.html" class="text-white hover:text-yellow-300 transition">Ch. 2</a>
-                        <a href="chapter3.html" class="text-white hover:text-yellow-300 transition">Ch. 3</a>
-                        <a href="chapter4.html" class="text-white hover:text-yellow-300 transition">Ch. 4</a>
-                        <a href="chapter5.html" class="text-white hover:text-yellow-300 transition">Ch. 5</a>
-                        <a href="chapter6.html" class="text-white hover:text-yellow-300 transition">Ch. 6</a>
-                        <a href="chapter7.html" class="text-yellow-300 font-semibold">Ch. 7</a>
-                        <a href="#" class="text-white hover:text-yellow-300 transition">Chapters</a>
+                    <div>
+                        <a href="index.html">Home</a>
+                        <a href="chapter1.html">Ch. 1</a>
+                        <a href="chapter2.html">Ch. 2</a>
+                        <a href="chapter3.html">Ch. 3</a>
+                        <a href="chapter4.html">Ch. 4</a>
+                        <a href="chapter5.html">Ch. 5</a>
+                        <a href="chapter6.html">Ch. 6</a>
+                        <a href="chapter7.html">Ch. 7</a>
+                        <a href="#">Chapters</a>
                     </div>
                 </div>
 
                 <!-- Mobile Menu Items -->
-                <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-3 pb-4">
-                    <a href="index.html" class="block text-white hover:text-yellow-300 transition">Home</a>
-                    <a href="chapter1.html" class="block text-white hover:text-yellow-300 transition">Chapter 1</a>
-                    <a href="chapter2.html" class="block text-white hover:text-yellow-300 transition">Chapter 2</a>
-                    <a href="chapter3.html" class="block text-white hover:text-yellow-300 transition">Chapter 3</a>
-                    <a href="chapter4.html" class="block text-white hover:text-yellow-300 transition">Chapter 4</a>
-                    <a href="chapter5.html" class="block text-white hover:text-yellow-300 transition">Chapter 5</a>
-                    <a href="chapter6.html" class="block text-white hover:text-yellow-300 transition">Chapter 6</a>
-                    <a href="chapter7.html" class="block text-yellow-300 font-semibold">Chapter 7</a>
-                    <a href="#" class="block text-white hover:text-yellow-300 transition">All Chapters</a>
+                <div id="mobileMenu">
+                    <a href="index.html">Home</a>
+                    <a href="chapter1.html">Chapter 1</a>
+                    <a href="chapter2.html">Chapter 2</a>
+                    <a href="chapter3.html">Chapter 3</a>
+                    <a href="chapter4.html">Chapter 4</a>
+                    <a href="chapter5.html">Chapter 5</a>
+                    <a href="chapter6.html">Chapter 6</a>
+                    <a href="chapter7.html">Chapter 7</a>
+                    <a href="#">All Chapters</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <div class="container mx-auto px-4 pt-24 pb-12 max-w-4xl">
+    <div>
         <!-- Chapter Header -->
-        <div class="fade-in">
-            <div class="glass-morphism rounded-2xl p-8 mb-8 text-center text-white">
-                <h1 class="playfair text-4xl md:text-5xl font-bold mb-2">Shadows Over Isiba</h1>
-                <p class="text-lg opacity-90">Chapter Seven</p>
-                <div class="w-24 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+        <div>
+            <div>
+                <h1>Shadows Over Isiba</h1>
+                <p>Chapter Seven</p>
+                <div></div>
             </div>
         </div>
 
         <!-- Chapter Content -->
-        <article class="fade-in">
-            <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 lg:p-10 space-y-8">
+        <article>
+            <div>
                 
                 <!-- Introduction -->
-                <div class="text-center mb-8">
-                    <p class="text-lg leading-relaxed font-semibold text-gray-700">
+                <div>
+                    <p>
                         The drums of war did not sound when freedom died — they whispered.
                     </p>
-                    <p class="text-lg leading-relaxed mt-4">
+                    <p>
                         Isiba, once a dream carved from red dust, now lay wrapped in fear.
                     </p>
                 </div>
 
                 <!-- Part One -->
-                <div class="border-l-4 border-gray-600 bg-gray-100 pl-6 py-3">
-                    <h2 class="playfair text-2xl font-bold text-gray-800">PART ONE: THE YEARS OF SILENCE</h2>
+                <div>
+                    <h2>PART ONE: THE YEARS OF SILENCE</h2>
                 </div>
 
                 <!-- The General's Portrait -->
-                <div class="bg-gray-100 border border-gray-300 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-gray-800 mb-4">The General's Portrait</h3>
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <h3>The General's Portrait</h3>
+                    <p>
                         In every government building, in every school, in every market square, a portrait hung. The general's face — stern, unsmiling, painted to watch from every angle.
                     </p>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-gray-500 text-center">
-                        <p class="italic text-gray-700">
+                    <div>
+                        <p>
                             "And slowly, people forgot that he was just a man. He became the uniform. The flag. The state itself."
                         </p>
                     </div>
                 </div>
 
                 <!-- Part Two -->
-                <div class="border-l-4 border-red-600 bg-red-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-red-800">PART TWO: THE NEW ORDER</h2>
+                <div>
+                    <h2>PART TWO: THE NEW ORDER</h2>
                 </div>
 
-                <div class="bg-red-50 border border-red-200 rounded-xl p-6 my-6">
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <p>
                         The general ruled by decree. The Council was dissolved. The newspapers printed what they were told. The radio spoke with one voice.
                     </p>
-                    <p class="text-lg font-semibold text-red-700 text-center">
+                    <p>
                         To question was treason. To remember was rebellion.
                     </p>
                 </div>
 
                 <!-- The Division of Internal Harmony -->
-                <div class="bg-orange-50 border border-orange-200 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-orange-800 mb-4">The Division of Internal Harmony</h3>
-                    <div class="text-center mb-4">
-                        <p class="text-2xl font-bold text-orange-700">DIH</p>
-                        <p class="text-sm text-orange-600">Division of Internal Harmony</p>
+                <div>
+                    <h3>The Division of Internal Harmony</h3>
+                    <div>
+                        <p>DIH</p>
+                        <p>Division of Internal Harmony</p>
                     </div>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-orange-500">
-                        <p class="italic text-gray-700 text-center">
+                    <div>
+                        <p>
                             "Unity Through Vigilance."
                         </p>
-                        <p class="text-center text-sm text-gray-600 mt-2">Official Slogan</p>
+                        <p>Official Slogan</p>
                     </div>
-                    <p class="text-lg leading-relaxed mt-4 font-semibold text-orange-700 text-center">
+                    <p>
                         The people whispered: <em>"Unity Through Fear."</em>
                     </p>
                 </div>
 
                 <!-- Part Three -->
-                <div class="border-l-4 border-green-600 bg-green-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-green-800">PART THREE: THE HIDDEN NETWORK</h2>
+                <div>
+                    <h2>PART THREE: THE HIDDEN NETWORK</h2>
                 </div>
 
-                <div class="bg-green-50 border border-green-200 rounded-xl p-6 my-6">
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <p>
                         But dreams, like seeds, do not die easily.
                     </p>
-                    <div class="text-center mb-4">
-                        <p class="text-2xl font-bold text-green-700">The Keepers</p>
-                        <p class="text-sm text-green-600">Teachers, poets, former clerks, market women</p>
+                    <div>
+                        <p>The Keepers</p>
+                        <p>Teachers, poets, former clerks, market women</p>
                     </div>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-green-500">
-                        <p class="italic text-gray-700 text-center">
+                    <div>
+                        <p>
                             "Remember the covenant. Remember that nations die only when memories do."
                         </p>
                     </div>
                 </div>
 
                 <!-- The Underground Press -->
-                <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-blue-800 mb-4">The Underground Press</h3>
-                    <div class="text-center mb-4">
-                        <p class="text-2xl font-bold text-blue-700">The Buried Truth</p>
-                        <p class="text-sm text-blue-600">Single page, hand-cranked press</p>
+                <div>
+                    <h3>The Underground Press</h3>
+                    <div>
+                        <p>The Buried Truth</p>
+                        <p>Single page, hand-cranked press</p>
                     </div>
-                    <div class="grid md:grid-cols-2 gap-4 my-6">
-                        <div class="bg-white p-4 rounded-lg">
-                            <p class="font-semibold text-blue-700 mb-2">What They Published:</p>
-                            <ul class="text-sm space-y-1 text-gray-600">
-                                <li>• Names of the disappeared</li>
-                                <li>• Location of mass graves</li>
-                                <li>• Terms of foreign loans</li>
-                                <li>• The covenant's text</li>
+                    <div>
+                        <div>
+                            <p>What They Published:</p>
+                            <ul>
+                                <li>Names of the disappeared</li>
+                                <li>Location of mass graves</li>
+                                <li>Terms of foreign loans</li>
+                                <li>The covenant's text</li>
                             </ul>
                         </div>
-                        <div class="bg-white p-4 rounded-lg">
-                            <p class="font-semibold text-blue-700 mb-2">Distribution:</p>
-                            <p class="text-sm text-gray-600">Market women hiding copies in vegetable baskets</p>
+                        <div>
+                            <p>Distribution:</p>
+                            <p>Market women hiding copies in vegetable baskets</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Part Four -->
-                <div class="border-l-4 border-purple-600 bg-purple-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-purple-800">PART FOUR: THE WAR FOR TRUTH</h2>
+                <div>
+                    <h2>PART FOUR: THE WAR FOR TRUTH</h2>
                 </div>
 
                 <!-- The Night of Long Knives -->
-                <div class="bg-purple-50 border border-purple-200 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-purple-800 mb-4">The Night of Long Knives</h3>
-                    <div class="text-center mb-4">
-                        <p class="text-xl font-bold text-purple-700">The Cleansing</p>
+                <div>
+                    <h3>The Night of Long Knives</h3>
+                    <div>
+                        <p>The Cleansing</p>
                     </div>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-purple-500">
-                        <p class="italic text-gray-700 text-center">
+                    <div>
+                        <p>
                             "Over three nights, the DIH arrested two hundred people. Teachers. Poets. Market women. Students."
                         </p>
                     </div>
-                    <p class="text-lg leading-relaxed mt-4 font-semibold text-purple-700 text-center">
+                    <p>
                         The people clapped, because they had forgotten how not to.
                     </p>
                 </div>
 
                 <!-- Part Five -->
-                <div class="border-l-4 border-yellow-600 bg-yellow-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-yellow-800">PART FIVE: THE LONG NIGHT</h2>
+                <div>
+                    <h2>PART FIVE: THE LONG NIGHT</h2>
                 </div>
 
-                <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6 my-6">
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <p>
                         For years, the silence deepened. Children grew up believing that freedom had always worn a uniform.
                     </p>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-yellow-500 text-center">
-                        <p class="italic text-gray-700">
+                    <div>
+                        <p>
                             "The dream is not dead. It sleeps."
                         </p>
                     </div>
                 </div>
 
                 <!-- Kalisa in Exile -->
-                <div class="bg-teal-50 border border-teal-200 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-teal-800 mb-4">Kalisa in Exile</h3>
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <h3>Kalisa in Exile</h3>
+                    <p>
                         Kalisa fled north, then east, then finally across the border into Kenya. She lived in a refugee camp, teaching children who had lost everything.
                     </p>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-teal-500">
-                        <p class="italic text-gray-700 text-center">
+                    <div>
+                        <p>
                             "Someday," she would say, "someone will dig it up. And when they do, they will understand."
                         </p>
                     </div>
-                    <p class="text-lg leading-relaxed mt-4 font-semibold text-teal-700 text-center">
+                    <p>
                         And memory, in the end, is the only weapon that cannot be confiscated.
                     </p>
                 </div>
 
                 <!-- Part Six -->
-                <div class="border-l-4 border-amber-600 bg-amber-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-amber-800">PART SIX: IF MEMORY SURVIVES</h2>
+                <div>
+                    <h2>PART SIX: IF MEMORY SURVIVES</h2>
                 </div>
 
-                <div class="bg-amber-50 border border-amber-200 rounded-xl p-6 my-6">
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <p>
                         If nations die when they forget, then Uganda — though wounded — was not yet dead.
                     </p>
-                    <p class="text-lg leading-relaxed font-semibold text-amber-700 text-center">
+                    <p>
                         The long night continued — but the dawn was listening.
                     </p>
                 </div>
 
                 <!-- Reflection -->
-                <div class="border-l-4 border-indigo-600 bg-indigo-50 pl-6 py-4 my-8">
-                    <h3 class="playfair text-2xl font-bold text-indigo-800 mb-4">REFLECTION</h3>
+                <div>
+                    <h3>REFLECTION</h3>
                     
-                    <p class="text-lg leading-relaxed mb-6">
+                    <p>
                         Isiba still stands, but hollow. The marble is cracked. The fountains are dry. The House of Thought is a barracks. The streets are watched.
                     </p>
 
-                    <p class="text-lg leading-relaxed mb-6 font-semibold text-indigo-700">
+                    <p>
                         Yet somewhere, in basements and refugee camps, in whispered songs and underground newspapers, The Other Dream survives.
                     </p>
 
-                    <div class="bg-white rounded-lg p-6 mt-6">
-                        <div class="space-y-4">
-                            <p class="text-lg italic text-gray-700">Can a nation survive when truth becomes treason?</p>
-                            <p class="text-lg italic text-gray-700">When the only history taught is the victor's lie, who remembers what really happened?</p>
-                            <p class="text-lg italic text-gray-700">If a covenant is buried and the map is lost, will anyone ever find it?</p>
-                            <p class="text-lg italic text-gray-700">When fear replaces thought, can a people ever think freely again?</p>
-                            <p class="text-lg italic text-gray-700">And when the general dies, who will inherit his silence — or his ghosts?</p>
+                    <div>
+                        <div>
+                            <p>Can a nation survive when truth becomes treason?</p>
+                            <p>When the only history taught is the victor's lie, who remembers what really happened?</p>
+                            <p>If a covenant is buried and the map is lost, will anyone ever find it?</p>
+                            <p>When fear replaces thought, can a people ever think freely again?</p>
+                            <p>And when the general dies, who will inherit his silence — or his ghosts?</p>
                         </div>
-                        <div class="mt-6 p-4 bg-indigo-100 rounded-lg border-l-4 border-indigo-600">
-                            <p class="text-center font-semibold text-indigo-800 italic text-xl">
+                        <div>
+                            <p>
                                 The tyrant can burn the books, silence the voices, and erase the names. But he cannot kill the stories told in the dark. Because stories, unlike statues, cannot be toppled. They simply wait.
                             </p>
                         </div>
@@ -293,12 +265,12 @@
         </article>
 
         <!-- Navigation -->
-        <div class="flex justify-between mt-12">
-            <a href="chapter6.html" class="glass-morphism text-white px-6 py-3 rounded-lg hover:bg-white/20 transition flex items-center space-x-2">
+        <div>
+            <a href="chapter6.html">
                 <span>←</span>
                 <span>Chapter 6</span>
             </a>
-            <a href="chapter8.html" class="glass-morphism text-white px-6 py-3 rounded-lg hover:bg-white/20 transition flex items-center space-x-2">
+            <a href="chapter8.html">
                 <span>Chapter 8</span>
                 <span>→</span>
             </a>
@@ -306,14 +278,14 @@
     </div>
 
     <!-- Footer -->
-    <footer class="glass-morphism mt-12 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p class="playfair text-xl mb-2">Minds Before Guns</p>
-            <p class="opacity-80">Uganda Alternate History Project</p>
-            <div class="flex justify-center space-x-4 mt-4">
-                <a href="#" class="hover:text-yellow-300 transition">About</a>
-                <a href="#" class="hover:text-yellow-300 transition">Chapters</a>
-                <a href="#" class="hover:text-yellow-300 transition">Contact</a>
+    <footer>
+        <div>
+            <p>Minds Before Guns</p>
+            <p>Uganda Alternate History Project</p>
+            <div>
+                <a href="#">About</a>
+                <a href="#">Chapters</a>
+                <a href="#">Contact</a>
             </div>
         </div>
     </footer>
@@ -324,13 +296,17 @@
         const mobileMenu = document.getElementById('mobileMenu');
 
         menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'block';
+            }
         });
 
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (!e.target.closest('nav') && !mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.add('hidden');
+            if (!e.target.closest('nav') && mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
             }
         });
     </script>

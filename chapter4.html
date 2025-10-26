@@ -1,262 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Countercurrent - Minds Before Guns</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .playfair {
-            font-family: 'Playfair Display', serif;
-        }
-        .glass-morphism {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        .uganda-gradient {
-            background: linear-gradient(135deg, #000000 0%, #FFD100 50%, #D90000 100%);
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
 </head>
-<body class="uganda-gradient min-h-screen text-gray-800">
-    <!-- Mobile Hamburger Menu -->
-    <nav class="fixed w-full z-50">
-        <div class="glass-morphism rounded-b-2xl shadow-lg">
-            <div class="container mx-auto px-4 py-3">
-                <div class="flex justify-between items-center">
-                    <a href="index.html" class="playfair text-xl font-bold text-white">MINDS BEFORE GUNS</a>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div>
+            <div>
+                <div>
+                    <a href="index.html">MINDS BEFORE GUNS</a>
                     
                     <!-- Mobile menu button -->
-                    <button id="menuBtn" class="md:hidden text-white focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
+                    <button id="menuBtn">
+                        ☰
                     </button>
 
                     <!-- Desktop Menu -->
-                    <div class="hidden md:flex space-x-6">
-                        <a href="index.html" class="text-white hover:text-yellow-300 transition">Home</a>
-                        <a href="chapter1.html" class="text-white hover:text-yellow-300 transition">Ch. 1</a>
-                        <a href="chapter2.html" class="text-white hover:text-yellow-300 transition">Ch. 2</a>
-                        <a href="chapter3.html" class="text-white hover:text-yellow-300 transition">Ch. 3</a>
-                        <a href="chapter4.html" class="text-yellow-300 font-semibold">Ch. 4</a>
-                        <a href="#" class="text-white hover:text-yellow-300 transition">Chapters</a>
+                    <div>
+                        <a href="index.html">Home</a>
+                        <a href="chapter1.html">Ch. 1</a>
+                        <a href="chapter2.html">Ch. 2</a>
+                        <a href="chapter3.html">Ch. 3</a>
+                        <a href="chapter4.html">Ch. 4</a>
+                        <a href="#">Chapters</a>
                     </div>
                 </div>
 
                 <!-- Mobile Menu Items -->
-                <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-3 pb-4">
-                    <a href="index.html" class="block text-white hover:text-yellow-300 transition">Home</a>
-                    <a href="chapter1.html" class="block text-white hover:text-yellow-300 transition">Chapter 1: The Ignorant Freedom</a>
-                    <a href="chapter2.html" class="block text-white hover:text-yellow-300 transition">Chapter 2: The First Cracks</a>
-                    <a href="chapter3.html" class="block text-white hover:text-yellow-300 transition">Chapter 3: The People's Awakening</a>
-                    <a href="chapter4.html" class="block text-yellow-300 font-semibold">Chapter 4: The Countercurrent</a>
-                    <a href="#" class="block text-white hover:text-yellow-300 transition">All Chapters</a>
+                <div id="mobileMenu">
+                    <a href="index.html">Home</a>
+                    <a href="chapter1.html">Chapter 1: The Ignorant Freedom</a>
+                    <a href="chapter2.html">Chapter 2: The First Cracks</a>
+                    <a href="chapter3.html">Chapter 3: The People's Awakening</a>
+                    <a href="chapter4.html">Chapter 4: The Countercurrent</a>
+                    <a href="#">All Chapters</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <div class="container mx-auto px-4 pt-24 pb-12 max-w-4xl">
+    <div>
         <!-- Chapter Header -->
-        <div class="fade-in">
-            <div class="glass-morphism rounded-2xl p-8 mb-8 text-center text-white">
-                <h1 class="playfair text-4xl md:text-5xl font-bold mb-2">The Countercurrent</h1>
-                <p class="text-lg opacity-90">Chapter Four</p>
-                <div class="w-24 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+        <div>
+            <div>
+                <h1>The Countercurrent</h1>
+                <p>Chapter Four</p>
+                <div></div>
             </div>
         </div>
 
         <!-- Chapter Content -->
-        <article class="fade-in">
-            <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 lg:p-10 space-y-8">
+        <article>
+            <div>
                 
                 <!-- Introduction -->
-                <div class="text-center mb-8">
-                    <p class="text-lg leading-relaxed">
+                <div>
+                    <p>
                         Victory, when it comes too easily, breeds carelessness. And the Council's awakening — however genuine, however necessary — had been too smooth. Too hopeful. Too pure.
                     </p>
-                    <p class="text-lg leading-relaxed mt-4">
+                    <p>
                         The people believed they had won. But wars are not won by declarations. They are won by endurance.
                     </p>
                 </div>
 
                 <!-- Part One -->
-                <div class="border-l-4 border-red-600 bg-red-50/30 pl-6 py-3">
-                    <h2 class="playfair text-2xl font-bold text-red-800">PART ONE: THE EMPIRE'S REVENGE</h2>
+                <div>
+                    <h2>PART ONE: THE EMPIRE'S REVENGE</h2>
                 </div>
 
-                <p class="text-lg leading-relaxed">
+                <p>
                     And in the marble halls of Whitehall, in the oak-paneled boardrooms of London, in the private clubs where men still spoke of Africa as "the colonies," the empire was preparing its counterattack.
                 </p>
 
-                <p class="text-lg leading-relaxed font-semibold text-red-700">
+                <p>
                     Not with soldiers. Not with governors. But with something far more insidious: <strong>economics</strong>.
                 </p>
 
                 <!-- The Invisible Siege -->
-                <div class="bg-gray-100 border border-gray-300 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-gray-800 mb-4">The Invisible Siege</h3>
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <h3>The Invisible Siege</h3>
+                    <p>
                         Sir Reginald Harcourt sat across from three men who controlled more wealth than most African nations combined. To his left was Lord Pemberton, Foreign Office strategist and architect of what he called "soft colonialism." To his right were two executives from the East African Trading Company — men whose families had extracted resources from Uganda for generations.
                     </p>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-red-500">
-                        <p class="italic text-gray-700">
+                    <div>
+                        <p>
                             "The Council is vulnerable," Pemberton said, spreading a report across the table. "Their economy is still fragile. They've built factories, yes. But they lack capital reserves. They've educated the masses, but they haven't secured foreign markets. And most critically — they refuse to borrow."
                         </p>
                     </div>
                 </div>
 
                 <!-- The Propaganda Machine -->
-                <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-blue-800 mb-4">The Propaganda Machine</h3>
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <h3>The Propaganda Machine</h3>
+                    <p>
                         The economic siege was only the first front. The second was narrative.
                     </p>
-                    <div class="space-y-4">
-                        <div class="bg-white p-4 rounded-lg">
-                            <p class="font-semibold text-gray-700 mb-2">British Newspaper Headlines:</p>
-                            <div class="space-y-2 text-sm">
-                                <p class="italic text-gray-600">"Uganda's Radical Isolationism: A Nation on the Brink?"</p>
-                                <p class="italic text-gray-600">"The Dangers of African Socialism: Can Uganda Survive Without Western Aid?"</p>
-                                <p class="italic text-gray-600">"Inside Uganda's 'Awakening': Hope or Hubris?"</p>
+                    <div>
+                        <div>
+                            <p>British Newspaper Headlines:</p>
+                            <div>
+                                <p>"Uganda's Radical Isolationism: A Nation on the Brink?"</p>
+                                <p>"The Dangers of African Socialism: Can Uganda Survive Without Western Aid?"</p>
+                                <p>"Inside Uganda's 'Awakening': Hope or Hubris?"</p>
                             </div>
                         </div>
-                        <p class="text-lg leading-relaxed">
+                        <p>
                             The message was clear: <em>Uganda is trying to do too much, too fast, with too little experience.</em>
                         </p>
                     </div>
                 </div>
 
                 <!-- The Scholars' Return -->
-                <div class="bg-green-50 border border-green-200 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-green-800 mb-4">The Scholars' Return</h3>
-                    <p class="text-lg leading-relaxed">
+                <div>
+                    <h3>The Scholars' Return</h3>
+                    <p>
                         One of those Ugandans was Daniel Okello, a brilliant economist who had been sent to the London School of Economics on a government scholarship. He returned to Kampala in the third year of the awakening, armed with a doctorate and a quiet disillusionment.
                     </p>
-                    <div class="bg-white p-4 rounded-lg mt-4 border-l-4 border-green-500">
-                        <p class="italic text-gray-700">
+                    <div>
+                        <p>
                             "We cannot isolate ourselves from global markets," he argued. "We need foreign investment. We need loans. We need to integrate, not insulate."
                         </p>
                     </div>
-                    <p class="text-lg leading-relaxed mt-4 font-semibold text-green-700">
+                    <p>
                         The British had not paid him. They had simply educated him. And in doing so, they had colonized his mind.
                     </p>
                 </div>
 
                 <!-- Part Two -->
-                <div class="border-l-4 border-purple-600 bg-purple-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-purple-800">PART TWO: THE RETURN OF THE KINGS</h2>
+                <div>
+                    <h2>PART TWO: THE RETURN OF THE KINGS</h2>
                 </div>
 
-                <p class="text-lg leading-relaxed">
+                <p>
                     While the British attacked from abroad, the chiefs attacked from within.
                 </p>
 
-                <p class="text-lg leading-relaxed font-semibold text-purple-700">
+                <p>
                     They had been stripped of power, but not of influence. And influence, unlike power, does not require titles. It requires memory.
                 </p>
 
                 <!-- The Secret Gatherings -->
-                <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-yellow-800 mb-4">The Secret Gatherings</h3>
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <h3>The Secret Gatherings</h3>
+                    <p>
                         In a sprawling estate on the outskirts of Kampala, hidden behind walls and guarded by men loyal to the old ways, the Kabaka of Buganda hosted a meeting.
                     </p>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-yellow-500">
-                        <p class="italic text-gray-700">
+                    <div>
+                        <p>
                             "The Council has stolen our heritage. They say we are equals — but equals to whom? To peasants? To nomads? Our kingdoms were civilizations when the north was still hunting cattle."
                         </p>
                     </div>
                 </div>
 
                 <!-- Part Three -->
-                <div class="border-l-4 border-orange-600 bg-orange-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-orange-800">PART THREE: THE MERCHANTS OF DEPENDENCY</h2>
+                <div>
+                    <h2>PART THREE: THE MERCHANTS OF DEPENDENCY</h2>
                 </div>
 
-                <p class="text-lg leading-relaxed">
+                <p>
                     The Indian merchants, meanwhile, waged their own war — a war of scarcity.
                 </p>
 
                 <!-- The Storehouses -->
-                <div class="bg-red-50 border border-red-200 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-red-800 mb-4">The Storehouses Are Full, The Shelves Are Empty</h3>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-red-500">
-                        <p class="italic text-gray-700">
+                <div>
+                    <h3>The Storehouses Are Full, The Shelves Are Empty</h3>
+                    <div>
+                        <p>
                             "Why are we holding stock?" his nephew asked. "The Council's distributors are asking for supplies. We could sell now."
                         </p>
-                        <p class="italic text-gray-700 mt-2">
+                        <p>
                             Patel shook his head. "We sell when the price is right."
                         </p>
                     </div>
-                    <p class="text-lg leading-relaxed mt-4 font-semibold text-red-700">
+                    <p>
                         It was not personal. It was business. But business, in this case, was sabotage.
                     </p>
                 </div>
 
                 <!-- Part Four -->
-                <div class="border-l-4 border-blue-600 bg-blue-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-blue-800">PART FOUR: THE COUNCIL UNDER SIEGE</h2>
+                <div>
+                    <h2>PART FOUR: THE COUNCIL UNDER SIEGE</h2>
                 </div>
 
-                <p class="text-lg leading-relaxed">
+                <p>
                     By the end of the awakening's first decade, the Council was surrounded.
                 </p>
 
                 <!-- Part Five -->
-                <div class="border-l-4 border-gray-600 bg-gray-100 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-gray-800">PART FIVE: THE FIRST BETRAYAL</h2>
+                <div>
+                    <h2>PART FIVE: THE FIRST BETRAYAL</h2>
                 </div>
 
-                <p class="text-lg leading-relaxed font-semibold text-gray-700">
+                <p>
                     The crack appeared not with a gunshot, but with a whisper.
                 </p>
 
                 <!-- Reflection -->
-                <div class="border-l-4 border-green-600 bg-green-50 pl-6 py-4 my-8">
-                    <h3 class="playfair text-2xl font-bold text-green-800 mb-4">REFLECTION</h3>
+                <div>
+                    <h3>REFLECTION</h3>
                     
-                    <p class="text-lg leading-relaxed mb-6">
+                    <p>
                         The awakening had been real. The progress had been undeniable. Roads connected what had been isolated. Schools taught what had been hidden. Clinics healed what had been ignored.
                     </p>
 
-                    <p class="text-lg leading-relaxed mb-6">
+                    <p>
                         But progress, no matter how pure, attracts enemies. And enemies, when patient, do not need to destroy. They only need to wait. To whisper. To erode.
                     </p>
 
-                    <p class="text-lg leading-relaxed font-semibold text-green-700">
+                    <p>
                         The people had awakened. But the shadows had too. And shadows, unlike light, do not tire.
                     </p>
 
                     <!-- Reflection Questions -->
-                    <div class="bg-white rounded-lg p-6 mt-6">
-                        <div class="space-y-4">
-                            <p class="text-lg italic text-gray-700">When the enemy wears a uniform, courage is simple.</p>
-                            <p class="text-lg italic text-gray-700">But when the enemy wears a smile and speaks of partnership, how do you fight?</p>
-                            <p class="text-lg italic text-gray-700">Can a nation survive economic siege when its people do not see the siege — only the hunger?</p>
-                            <p class="text-lg italic text-gray-700">If tradition is weaponized as identity, can unity ever be more than a slogan?</p>
-                            <p class="text-lg italic text-gray-700">When pragmatism becomes betrayal, who decides where the line is drawn?</p>
-                            <p class="text-lg italic text-gray-700">And when the first crack appears in the foundation, can the house still stand?</p>
+                    <div>
+                        <div>
+                            <p>When the enemy wears a uniform, courage is simple.</p>
+                            <p>But when the enemy wears a smile and speaks of partnership, how do you fight?</p>
+                            <p>Can a nation survive economic siege when its people do not see the siege — only the hunger?</p>
+                            <p>If tradition is weaponized as identity, can unity ever be more than a slogan?</p>
+                            <p>When pragmatism becomes betrayal, who decides where the line is drawn?</p>
+                            <p>And when the first crack appears in the foundation, can the house still stand?</p>
                         </div>
                     </div>
 
                     <!-- Final Quote -->
-                    <div class="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-600">
-                        <blockquote class="text-xl italic text-gray-700 text-center">
+                    <div>
+                        <blockquote>
                             "The countercurrent does not crash like a wave. It pulls like an undertow — silent, patient, and impossible to see until you are already drowning."
                         </blockquote>
                     </div>
@@ -266,12 +238,12 @@
         </article>
 
         <!-- Navigation -->
-        <div class="flex justify-between mt-12">
-            <a href="chapter3.html" class="glass-morphism text-white px-6 py-3 rounded-lg hover:bg-white/20 transition flex items-center space-x-2">
+        <div>
+            <a href="chapter3.html">
                 <span>←</span>
                 <span>Chapter 3</span>
             </a>
-            <a href="chapter5.html" class="glass-morphism text-white px-6 py-3 rounded-lg hover:bg-white/20 transition flex items-center space-x-2">
+            <a href="chapter5.html">
                 <span>Chapter 5</span>
                 <span>→</span>
             </a>
@@ -279,14 +251,14 @@
     </div>
 
     <!-- Footer -->
-    <footer class="glass-morphism mt-12 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p class="playfair text-xl mb-2">Minds Before Guns</p>
-            <p class="opacity-80">Uganda Alternate History Project</p>
-            <div class="flex justify-center space-x-4 mt-4">
-                <a href="#" class="hover:text-yellow-300 transition">About</a>
-                <a href="#" class="hover:text-yellow-300 transition">Chapters</a>
-                <a href="#" class="hover:text-yellow-300 transition">Contact</a>
+    <footer>
+        <div>
+            <p>Minds Before Guns</p>
+            <p>Uganda Alternate History Project</p>
+            <div>
+                <a href="#">About</a>
+                <a href="#">Chapters</a>
+                <a href="#">Contact</a>
             </div>
         </div>
     </footer>
@@ -297,13 +269,17 @@
         const mobileMenu = document.getElementById('mobileMenu');
 
         menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'block';
+            }
         });
 
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (!e.target.closest('nav') && !mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.add('hidden');
+            if (!e.target.closest('nav') && mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
             }
         });
     </script>

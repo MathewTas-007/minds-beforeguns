@@ -4,277 +4,250 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Long Walk - Minds Before Guns</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .playfair {
-            font-family: 'Playfair Display', serif;
-        }
-        .glass-morphism {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        .uganda-gradient {
-            background: linear-gradient(135deg, #000000 0%, #FFD100 50%, #D90000 100%);
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-    </style>
 </head>
-<body class="uganda-gradient min-h-screen text-gray-800">
-    <!-- Mobile Hamburger Menu -->
-    <nav class="fixed w-full z-50">
-        <div class="glass-morphism rounded-b-2xl shadow-lg">
-            <div class="container mx-auto px-4 py-3">
-                <div class="flex justify-between items-center">
-                    <a href="index.html" class="playfair text-xl font-bold text-white">MINDS BEFORE GUNS</a>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div>
+            <div>
+                <div>
+                    <a href="index.html">MINDS BEFORE GUNS</a>
                     
                     <!-- Mobile menu button -->
-                    <button id="menuBtn" class="md:hidden text-white focus:outline-none">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
+                    <button id="menuBtn">
+                        ☰
                     </button>
 
                     <!-- Desktop Menu -->
-                    <div class="hidden md:flex space-x-6">
-                        <a href="index.html" class="text-white hover:text-yellow-300 transition">Home</a>
-                        <a href="chapter1.html" class="text-white hover:text-yellow-300 transition">Ch. 1</a>
-                        <a href="chapter2.html" class="text-white hover:text-yellow-300 transition">Ch. 2</a>
-                        <a href="chapter3.html" class="text-white hover:text-yellow-300 transition">Ch. 3</a>
-                        <a href="chapter4.html" class="text-white hover:text-yellow-300 transition">Ch. 4</a>
-                        <a href="chapter5.html" class="text-white hover:text-yellow-300 transition">Ch. 5</a>
-                        <a href="chapter6.html" class="text-white hover:text-yellow-300 transition">Ch. 6</a>
-                        <a href="chapter7.html" class="text-white hover:text-yellow-300 transition">Ch. 7</a>
-                        <a href="chapter8.html" class="text-white hover:text-yellow-300 transition">Ch. 8</a>
-                        <a href="chapter9.html" class="text-white hover:text-yellow-300 transition">Ch. 9</a>
-                        <a href="chapter10.html" class="text-yellow-300 font-semibold">Ch. 10</a>
-                        <a href="#" class="text-white hover:text-yellow-300 transition">Chapters</a>
+                    <div>
+                        <a href="index.html">Home</a>
+                        <a href="chapter1.html">Ch. 1</a>
+                        <a href="chapter2.html">Ch. 2</a>
+                        <a href="chapter3.html">Ch. 3</a>
+                        <a href="chapter4.html">Ch. 4</a>
+                        <a href="chapter5.html">Ch. 5</a>
+                        <a href="chapter6.html">Ch. 6</a>
+                        <a href="chapter7.html">Ch. 7</a>
+                        <a href="chapter8.html">Ch. 8</a>
+                        <a href="chapter9.html">Ch. 9</a>
+                        <a href="chapter10.html">Ch. 10</a>
+                        <a href="#">Chapters</a>
                     </div>
                 </div>
 
                 <!-- Mobile Menu Items -->
-                <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-3 pb-4">
-                    <a href="index.html" class="block text-white hover:text-yellow-300 transition">Home</a>
-                    <a href="chapter1.html" class="block text-white hover:text-yellow-300 transition">Chapter 1</a>
-                    <a href="chapter2.html" class="block text-white hover:text-yellow-300 transition">Chapter 2</a>
-                    <a href="chapter3.html" class="block text-white hover:text-yellow-300 transition">Chapter 3</a>
-                    <a href="chapter4.html" class="block text-white hover:text-yellow-300 transition">Chapter 4</a>
-                    <a href="chapter5.html" class="block text-white hover:text-yellow-300 transition">Chapter 5</a>
-                    <a href="chapter6.html" class="block text-white hover:text-yellow-300 transition">Chapter 6</a>
-                    <a href="chapter7.html" class="block text-white hover:text-yellow-300 transition">Chapter 7</a>
-                    <a href="chapter8.html" class="block text-white hover:text-yellow-300 transition">Chapter 8</a>
-                    <a href="chapter9.html" class="block text-white hover:text-yellow-300 transition">Chapter 9</a>
-                    <a href="chapter10.html" class="block text-yellow-300 font-semibold">Chapter 10</a>
-                    <a href="#" class="block text-white hover:text-yellow-300 transition">All Chapters</a>
+                <div id="mobileMenu">
+                    <a href="index.html">Home</a>
+                    <a href="chapter1.html">Chapter 1</a>
+                    <a href="chapter2.html">Chapter 2</a>
+                    <a href="chapter3.html">Chapter 3</a>
+                    <a href="chapter4.html">Chapter 4</a>
+                    <a href="chapter5.html">Chapter 5</a>
+                    <a href="chapter6.html">Chapter 6</a>
+                    <a href="chapter7.html">Chapter 7</a>
+                    <a href="chapter8.html">Chapter 8</a>
+                    <a href="chapter9.html">Chapter 9</a>
+                    <a href="chapter10.html">Chapter 10</a>
+                    <a href="#">All Chapters</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <div class="container mx-auto px-4 pt-24 pb-12 max-w-4xl">
+    <div>
         <!-- Chapter Header -->
-        <div class="fade-in">
-            <div class="glass-morphism rounded-2xl p-8 mb-8 text-center text-white">
-                <h1 class="playfair text-4xl md:text-5xl font-bold mb-2">The Long Walk</h1>
-                <p class="text-lg opacity-90">Chapter Ten</p>
-                <div class="w-24 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+        <div>
+            <div>
+                <h1>The Long Walk</h1>
+                <p>Chapter Ten</p>
+                <div></div>
             </div>
         </div>
 
         <!-- Chapter Content -->
-        <article class="fade-in">
-            <div class="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-6 md:p-8 lg:p-10 space-y-8">
+        <article>
+            <div>
                 
                 <!-- Introduction -->
-                <div class="text-center mb-8">
-                    <p class="text-lg leading-relaxed">
+                <div>
+                    <p>
                         Ten years had passed since the excavation. Ten years since Amara and her friends had unearthed the covenant. Ten years since Kalisa emerged from the shadows to tell them: <em>"You must choose — run or plant."</em>
                     </p>
-                    <p class="text-lg leading-relaxed mt-4 font-semibold text-gray-700">
+                    <p>
                         Amara had chosen both. She ran. Then she planted.
                     </p>
                 </div>
 
                 <!-- Part One -->
-                <div class="border-l-4 border-gray-600 bg-gray-100 pl-6 py-3">
-                    <h2 class="playfair text-2xl font-bold text-gray-800">PART ONE: THE SILENCE AFTER THE STORM</h2>
+                <div>
+                    <h2>PART ONE: THE SILENCE AFTER THE STORM</h2>
                 </div>
 
                 <!-- The Graffiti That Wouldn't Die -->
-                <div class="bg-yellow-50 border border-yellow-200 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-yellow-800 mb-4">The Graffiti That Wouldn't Die</h3>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-yellow-500 text-center">
-                        <p class="text-2xl font-bold text-yellow-700">WE WERE MEANT TO BE ONE</p>
+                <div>
+                    <h3>The Graffiti That Wouldn't Die</h3>
+                    <div>
+                        <p>WE WERE MEANT TO BE ONE</p>
                     </div>
-                    <p class="text-lg leading-relaxed mt-4 font-semibold text-yellow-700 text-center">
+                    <p>
                         Because you cannot arrest an idea. And you cannot erase what people have chosen to remember.
                     </p>
                 </div>
 
                 <!-- Part Two -->
-                <div class="border-l-4 border-green-600 bg-green-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-green-800">PART TWO: THE MARCH OF THE FEW</h2>
+                <div>
+                    <h2>PART TWO: THE MARCH OF THE FEW</h2>
                 </div>
 
-                <div class="bg-green-50 border border-green-200 rounded-xl p-6 my-6">
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <p>
                         It began with a rumor. No organization called for it. No opposition party endorsed it. No foreign NGO funded it.
                     </p>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-green-500 text-center">
-                        <p class="italic text-gray-700">
+                    <div>
+                        <p>
                             "They're walking to Isiba. Thousands of them."
                         </p>
                     </div>
-                    <p class="text-lg leading-relaxed mt-4 font-semibold text-green-700 text-center">
+                    <p>
                         But what do you do with a silent pilgrimage?
                     </p>
                 </div>
 
                 <!-- Part Three -->
-                <div class="border-l-4 border-blue-600 bg-blue-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-blue-800">PART THREE: THE CROSSING</h2>
+                <div>
+                    <h2>PART THREE: THE CROSSING</h2>
                 </div>
 
-                <div class="bg-blue-50 border border-blue-200 rounded-xl p-6 my-6">
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <p>
                         They reached the outskirts of Isiba as the sun set on the third day. The city had changed, but beneath the surface, the foundations remained.
                     </p>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-blue-500 text-center">
-                        <p class="italic text-gray-700 text-xl">
+                    <div>
+                        <p>
                             "Every generation must dig its own truth."
                         </p>
                     </div>
-                    <div class="text-center mt-4">
-                        <p class="text-2xl font-bold text-blue-700">COVENANT OF THE FOUR WINDS</p>
-                        <p class="text-sm text-blue-600">Found again, impossibly</p>
+                    <div>
+                        <p>COVENANT OF THE FOUR WINDS</p>
+                        <p>Found again, impossibly</p>
                     </div>
                 </div>
 
                 <!-- The Soldiers Watch -->
-                <div class="bg-gray-100 border border-gray-300 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-gray-800 mb-4">The Soldiers Watch</h3>
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <h3>The Soldiers Watch</h3>
+                    <p>
                         On the rooftops surrounding the square, soldiers stood with rifles. They had orders. Clear orders.
                     </p>
-                    <p class="text-lg leading-relaxed font-semibold text-gray-700 text-center">
+                    <p>
                         But they didn't fire.
                     </p>
                 </div>
 
                 <!-- Part Four -->
-                <div class="border-l-4 border-purple-600 bg-purple-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-purple-800">PART FOUR: THE RETURN OF LIGHT</h2>
+                <div>
+                    <h2>PART FOUR: THE RETURN OF LIGHT</h2>
                 </div>
 
-                <div class="bg-purple-50 border border-purple-200 rounded-xl p-6 my-6">
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <p>
                         Night fell over Isiba. But the darkness was broken by thousands of phone lights. Candles. Torches.
                     </p>
-                    <div class="text-center mb-4">
-                        <p class="text-2xl font-bold text-purple-700">THE LONG WALK HAS ENDED</p>
-                        <p class="text-sm text-purple-600">The image that escaped everywhere</p>
+                    <div>
+                        <p>THE LONG WALK HAS ENDED</p>
+                        <p>The image that escaped everywhere</p>
                     </div>
-                    <p class="text-lg leading-relaxed font-semibold text-purple-700 text-center">
+                    <p>
                         The truth. Or at least, a version of it that felt true.
                     </p>
                 </div>
 
                 <!-- Part Five -->
-                <div class="border-l-4 border-red-600 bg-red-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-red-800">PART FIVE: THE TESTAMENT</h2>
+                <div>
+                    <h2>PART FIVE: THE TESTAMENT</h2>
                 </div>
 
-                <div class="bg-red-50 border border-red-200 rounded-xl p-6 my-6">
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <p>
                         Amara recorded one last message that night, in a tent on the edge of the excavation site.
                     </p>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-red-500">
-                        <p class="italic text-gray-700 text-center">
+                    <div>
+                        <p>
                             "We didn't fight for a flag. We walked for a memory. For the idea that once, briefly, people tried to build something better."
                         </p>
                     </div>
-                    <p class="text-lg leading-relaxed mt-4 font-semibold text-red-700 text-center">
+                    <p>
                         "The walking is what makes us human. And the remembering is what makes us free."
                     </p>
                 </div>
 
                 <!-- The Disappearance -->
-                <div class="bg-orange-50 border border-orange-200 rounded-xl p-6 my-6">
-                    <h3 class="playfair text-xl font-bold text-orange-800 mb-4">The Disappearance</h3>
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <h3>The Disappearance</h3>
+                    <p>
                         No one saw her leave. Her body was never found. No arrest was announced. No death reported.
                     </p>
-                    <div class="bg-white p-4 rounded-lg border-l-4 border-orange-500 text-center">
-                        <p class="italic text-gray-700">
+                    <div>
+                        <p>
                             "Truth travels slower than bullets, but it never stops."
                         </p>
-                        <p class="text-sm text-gray-600 mt-2">- A.O.</p>
+                        <p>- A.O.</p>
                     </div>
                 </div>
 
                 <!-- Part Six -->
-                <div class="border-l-4 border-teal-600 bg-teal-50/30 pl-6 py-3 mt-12">
-                    <h2 class="playfair text-2xl font-bold text-teal-800">PART SIX: THE BURIED SEED</h2>
+                <div>
+                    <h2>PART SIX: THE BURIED SEED</h2>
                 </div>
 
-                <div class="bg-teal-50 border border-teal-200 rounded-xl p-6 my-6">
-                    <p class="text-lg leading-relaxed mb-4">
+                <div>
+                    <p>
                         Twenty years later, Isiba looked different again. The excavation site had been turned into a memorial. Sanitized. Commercialized.
                     </p>
-                    <div class="text-center mb-4">
-                        <p class="text-xl font-bold text-teal-700">The Wildflowers</p>
-                        <p class="text-sm text-teal-600">Yellow. Stubborn. Persistent. Growing in concrete.</p>
+                    <div>
+                        <p>The Wildflowers</p>
+                        <p>Yellow. Stubborn. Persistent. Growing in concrete.</p>
                     </div>
-                    <p class="text-lg leading-relaxed font-semibold text-teal-700 text-center">
+                    <p>
                         And occasionally, when no one was watching, someone would kneel beside the flowers and press their palm to the ground. Remembering.
                     </p>
                 </div>
 
                 <!-- Epilogue -->
-                <div class="border-l-4 border-amber-600 bg-amber-50 pl-6 py-4 my-8">
-                    <h3 class="playfair text-2xl font-bold text-amber-800 mb-4">EPILOGUE: THE QUESTION REMAINS</h3>
+                <div>
+                    <h3>EPILOGUE: THE QUESTION REMAINS</h3>
                     
-                    <p class="text-lg leading-relaxed mb-6">
+                    <p>
                         The covenant is in a museum now. The story is taught in schools. The dream is archived.
                     </p>
 
-                    <p class="text-lg leading-relaxed mb-6 font-semibold text-amber-700">
+                    <p>
                         Because nations are not built once. They are built continuously. By every generation that chooses to remember.
                     </p>
 
-                    <p class="text-lg leading-relaxed mb-6 text-center">
-                        <span class="text-2xl font-bold text-amber-700">Uganda is still walking.</span>
+                    <p>
+                        Uganda is still walking.
                     </p>
 
                     <!-- Final Reflection -->
-                    <div class="bg-white rounded-lg p-6 mt-6">
-                        <h4 class="playfair text-xl font-bold text-gray-800 mb-4">REFLECTION</h4>
-                        <div class="space-y-4">
-                            <p class="text-lg italic text-gray-700">Can a dream survive its dreamers?</p>
-                            <p class="text-lg italic text-gray-700">Does memory require victory, or just persistence?</p>
-                            <p class="text-lg italic text-gray-700">When the march ends, does the walk continue?</p>
-                            <p class="text-lg italic text-gray-700">If every generation must dig its own truth, is progress real or just the same struggle in new clothes?</p>
-                            <p class="text-lg italic text-gray-700">And when the last person who remembers is gone, who will teach the children what we tried to build?</p>
+                    <div>
+                        <h4>REFLECTION</h4>
+                        <div>
+                            <p>Can a dream survive its dreamers?</p>
+                            <p>Does memory require victory, or just persistence?</p>
+                            <p>When the march ends, does the walk continue?</p>
+                            <p>If every generation must dig its own truth, is progress real or just the same struggle in new clothes?</p>
+                            <p>And when the last person who remembers is gone, who will teach the children what we tried to build?</p>
                         </div>
-                        <div class="mt-6 p-4 bg-amber-100 rounded-lg border-l-4 border-amber-600">
-                            <p class="text-center font-semibold text-amber-800 italic">
+                        <div>
+                            <p>
                                 The seed was planted. Whether it grows depends on those who water it. The covenant is buried. Whether it's found depends on those brave enough to dig. The dream is sleeping. Whether it wakes depends on those stubborn enough to remember.
                             </p>
-                            <p class="text-center font-semibold text-amber-800 mt-4">
+                            <p>
                                 History is not written by victors. It is written by those who refuse to forget.
                             </p>
-                            <p class="text-center text-2xl font-bold text-amber-700 mt-4">
+                            <p>
                                 Uganda is still walking.
                             </p>
                         </div>
@@ -285,12 +258,12 @@
         </article>
 
         <!-- Final Navigation -->
-        <div class="flex justify-between mt-12">
-            <a href="chapter9.html" class="glass-morphism text-white px-6 py-3 rounded-lg hover:bg-white/20 transition flex items-center space-x-2">
+        <div>
+            <a href="chapter9.html">
                 <span>←</span>
                 <span>Chapter 9</span>
             </a>
-            <a href="index.html" class="glass-morphism text-white px-6 py-3 rounded-lg hover:bg-white/20 transition flex items-center space-x-2">
+            <a href="index.html">
                 <span>Return Home</span>
                 <span>🏠</span>
             </a>
@@ -298,14 +271,14 @@
     </div>
 
     <!-- Footer -->
-    <footer class="glass-morphism mt-12 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p class="playfair text-xl mb-2">Minds Before Guns</p>
-            <p class="opacity-80">Uganda Alternate History Project</p>
-            <div class="flex justify-center space-x-4 mt-4">
-                <a href="#" class="hover:text-yellow-300 transition">About</a>
-                <a href="#" class="hover:text-yellow-300 transition">Chapters</a>
-                <a href="#" class="hover:text-yellow-300 transition">Contact</a>
+    <footer>
+        <div>
+            <p>Minds Before Guns</p>
+            <p>Uganda Alternate History Project</p>
+            <div>
+                <a href="#">About</a>
+                <a href="#">Chapters</a>
+                <a href="#">Contact</a>
             </div>
         </div>
     </footer>
@@ -316,13 +289,17 @@
         const mobileMenu = document.getElementById('mobileMenu');
 
         menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
+            } else {
+                mobileMenu.style.display = 'block';
+            }
         });
 
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (!e.target.closest('nav') && !mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.add('hidden');
+            if (!e.target.closest('nav') && mobileMenu.style.display === 'block') {
+                mobileMenu.style.display = 'none';
             }
         });
     </script>
