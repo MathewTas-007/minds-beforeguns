@@ -4,24 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHAPTER 1: THE LANDING - Before The Ships Arrived</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Georgia, serif;
+            background: #0a0e27;
+            color: #e8e8f0;
+            line-height: 1.7;
+        }
+        /* Navigation */
+        nav {
+            background: #1a1f3a;
+            padding: 1rem;
+            border-bottom: 2px solid #2d3561;
+            position: sticky;
+            top: 0;
+        }
+        .nav-brand {
+            color: #64ffda;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        #menuBtn {
+            display: none;
+            background: #5a67d8;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            float: right;
+        }
+        .desktop-menu {
+            margin-top: 1rem;
+        }
+        .desktop-menu a, .mobile-menu a {
+            color: #a8b2d1;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+        }
+        .desktop-menu a:hover, .mobile-menu a:hover {
+            background: #5a67d8;
+            color: white;
+        }
+        .mobile-menu {
+            display: none;
+        }
+
+        /* Content */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .chapter-header {
+            text-align: center;
+            padding: 2rem;
+            background: #64ffda;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+        .chapter-content h1 {
+            background: #252b4a;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .chapter-content p {
+            margin-bottom: 1.5rem;
+        }
+        .chapter-content p b {
+            display: block;
+            color: #64ffda;
+            font-size: 1.3rem;
+            margin-top: 2rem;
+        }
+
+        /* Image Styling (Optional, but useful for content flow) */
+        .story-image {
+            max-width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            display: block; /* Ensures it takes up its own line */
+        }
+        
+        /* mobile */
+        @media (max-width: 768px) {
+            #menuBtn {
+                display: block;
+            }
+            .desktop-menu {
+                display: none;
+            }
+            .mobile-menu {
+                display: block;
+            }
+            .mobile-menu.hidden {
+                display: none;
+            }
+            .mobile-menu a {
+                display: block;
+            }
+            .chapter-header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div>
             <div>
                 <div>
                     <a href="index.html">BEFORE THE SHIPS ARRIVED</a>
                     
-                    <!-- Mobile menu button -->
                     <button id="menuBtn">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
                     </button>
 
-                    <!-- Desktop Menu -->
-                    <div>
+                    <div class="desktop-menu">
                         <a href="index.html">Home</a>
                         <a href="chapter1.html">Ch. 1</a>
                         <a href="#">Chapters</a>
@@ -29,8 +138,7 @@
                     </div>
                 </div>
 
-                <!-- Mobile Menu Items -->
-                <div id="mobileMenu">
+                <div id="mobileMenu" class="mobile-menu hidden">
                     <a href="index.html">Home</a>
                     <a href="chapter1.html">Chapter 1: The Landing</a>
                     <a href="#">All Chapters</a>
@@ -40,10 +148,8 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <div>
-        <!-- Chapter Header -->
-        <div>
+    <div class="main-content">
+        <div class="chapter-header">
             <div>
                 <h1>THE LANDING</h1>
                 <p>Chapter One</p>
@@ -51,11 +157,9 @@
             </div>
         </div>
 
-        <!-- Chapter Content -->
-        <article>
+        <article class="chapter-content">
             <div>
                 
-                <!-- Part One -->
                 <div>
                     <h2>Part One: The Arrival</h2>
                 </div>
@@ -73,43 +177,38 @@
                         Timbuktu. Not the dusty tourist stop of her childhood. Not the declining city of faded manuscripts and encroaching sand. This was Timbuktu at the height of the Mali Empire, in the year 1447, and it was <strong>magnificent</strong>.
                     </p>
                 </div>
+                
+                <img src="images/illustration.png" alt="Illustration of the time travel team appearing on the red earth of 15th-century Timbuktu in front of the Sankore University, with a blue-white energy beam at their feet." class="story-image" loading="lazy">
 
-                <!-- Team Introduction -->
+
                 <div>
                     <h3>The Time Travel Team</h3>
                     <div>
                         <div>
                             <div>
-                                <div></div>
                                 <p><strong>Dr. Amara Okonkwo</strong> - Team Leader</p>
                             </div>
                             <div>
-                                <div></div>
                                 <p><strong>Kwame Mensah</strong> - Military Strategist</p>
                             </div>
                             <div>
-                                <div></div>
                                 <p><strong>Jabari Okello</strong> - Tech Specialist</p>
                             </div>
                         </div>
                         <div>
                             <div>
-                                <div></div>
                                 <p><strong>Fatou Diarra</strong> - Medical Doctor</p>
                             </div>
                             <div>
-                                <div></div>
                                 <p><strong>Zeinab Hassan</strong> - Linguist</p>
                             </div>
                             <div>
-                                <div></div>
                                 <p><strong>Tendai Moyo</strong> - Agricultural Scientist</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Part Two -->
                 <div>
                     <h2>Part Two: First Contact</h2>
                 </div>
@@ -125,7 +224,6 @@
                     </div>
                 </div>
 
-                <!-- The Hologram Reveal -->
                 <div>
                     <h3>The Proof</h3>
                     <div>
@@ -137,7 +235,6 @@
                     </p>
                 </div>
 
-                <!-- Part Three -->
                 <div>
                     <h2>Part Three: The Council of Smoke</h2>
                 </div>
@@ -153,7 +250,6 @@
                     </div>
                 </div>
 
-                <!-- Part Four -->
                 <div>
                     <h2>Part Four: The First Student</h2>
                 </div>
@@ -170,7 +266,6 @@
                     </div>
                 </div>
 
-                <!-- Part Five -->
                 <div>
                     <h2>Part Five: The Weight of Knowledge</h2>
                 </div>
@@ -186,7 +281,6 @@
                     </div>
                 </div>
 
-                <!-- Part Six -->
                 <div>
                     <h2>Part Six: The First Library</h2>
                 </div>
@@ -199,6 +293,9 @@
                         <p>📚</p>
                         <p>The Hidden Knowledge Cache</p>
                     </div>
+                    
+                    <img src="images/library.png" alt="The team inside a hidden library within a cave system, surrounded by bookshelves and advanced digital tablets, with a warning inscribed on a rock face." class="story-image" loading="lazy">
+
                     <div>
                         <p>
                             "They will come from the sea. They will offer trade and bring chains. They will speak of God and practice theft. Remember."
@@ -206,7 +303,6 @@
                     </div>
                 </div>
 
-                <!-- Part Seven -->
                 <div>
                     <h2>Part Seven: Reflection</h2>
                 </div>
@@ -220,38 +316,9 @@
                     </p>
                 </div>
 
-                <!-- Reflection Questions -->
                 <div>
                     <h3>Questions for Reflection</h3>
                     
-                    <div>
-                        <div>
-                            <p>
-                                When you know a catastrophe is coming but cannot prevent it, is preparation still meaningful—or is it just elaborate mourning?
-                            </p>
-                        </div>
-                        <div>
-                            <p>
-                                If you could travel back in time to warn your ancestors of an inevitable tragedy, would you? Or is the burden of knowing sometimes worse than the ignorance of surprise?
-                            </p>
-                        </div>
-                        <div>
-                            <p>
-                                The team chose to plant seeds and hide knowledge rather than try to prevent colonization through force. Was this wisdom or cowardice?
-                            </p>
-                        </div>
-                        <div>
-                            <p>
-                                Musa called himself a "translator of time." What does it mean to translate across centuries—and what gets lost in translation?
-                            </p>
-                        </div>
-                        <div>
-                            <p>
-                                When Amara said "survival is not the same as victory, but sometimes survival is the only victory possible," was she accepting defeat or redefining success?
-                            </p>
-                        </div>
-                    </div>
-
                     <div>
                         <p>
                             <strong>They had come to change history. They would settle for remembering it.</strong>
@@ -262,7 +329,6 @@
             </div>
         </article>
 
-        <!-- Navigation -->
         <div>
             <a href="index.html">
                 <span>←</span>
@@ -275,7 +341,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
         <div>
             <p>Before The Ships Arrived</p>
@@ -288,7 +353,6 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu -->
     <script>
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');

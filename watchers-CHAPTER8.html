@@ -4,6 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHAPTER 8: THE GREAT CONSTRUCTION - Before The Ships Arrived</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Georgia, serif;
+            background: #0a0e27;
+            color: #e8e8f0;
+            line-height: 1.7;
+        }
+
+        /* Navigation */
+        nav {
+            background: #1a1f3a;
+            padding: 1rem;
+            border-bottom: 2px solid #2d3561;
+            position: sticky;
+            top: 0;
+        }
+        .nav-brand {
+            color: #64ffda;
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        #menuBtn {
+            display: none;
+            background: #5a67d8;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            float: right;
+        }
+        .desktop-menu {
+            margin-top: 1rem;
+        }
+        .desktop-menu a, .mobile-menu a {
+            color: #a8b2d1;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+        }
+        .desktop-menu a:hover, .mobile-menu a:hover {
+            background: #5a67d8;
+            color: white;
+        }
+        .mobile-menu {
+            display: none;
+        }
+
+        /* main content */
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .chapter-header {
+            text-align: center;
+            padding: 2rem;
+            background: #64ffda;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+        .chapter-content h1 {
+            background: #252b4a;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+        .chapter-content p {
+            margin-bottom: 1.5rem;
+        }
+        .chapter-content p b {
+            display: block;
+            color: #64ffda;
+            font-size: 1.3rem;
+            margin-top: 2rem;
+        }
+
+        /* Image styling (optional but useful for content flow) */
+        .story-image {
+            max-width: 100%;
+            height: auto;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0 ,0, 0.3);
+            display: block;
+        }
+
+        /* mobile */
+        @media (max-width:768px) {
+            #menuBtn {
+                display: block;
+            }
+            .desktop-menu {
+                display: none;
+
+            }
+            .mobile-menu {
+                display: block;
+            }
+            .mobile-menu.hidden {
+                display: none;
+            }
+            .mobile-menu a {
+                display: block;
+            }
+            .chapter-header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
