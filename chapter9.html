@@ -16,7 +16,7 @@
             color: #2c2c2c;
             line-height: 1.7;
         }
-        
+
         /* Navigation */
         nav {
             background: #fff;
@@ -27,7 +27,7 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .nav-brand {
-            color: #8b4523;
+            color: #8b4513;
             text-decoration: none;
             font-size: 1.3rem;
             font-weight: bold;
@@ -35,7 +35,7 @@
         }
         #menuBtn {
             display: none;
-            background: #8b4523;
+            background: #8b4513;
             color: white;
             border: none;
             padding: 0.5rem 1rem;
@@ -45,7 +45,6 @@
         }
         .desktop-menu {
             margin-top: 1rem;
-
         }
         .desktop-menu a, #mobileMenu a {
             color: #5a5a5a;
@@ -67,7 +66,6 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem 1rem;
-
         }
         .chapter-header {
             text-align: center;
@@ -86,7 +84,6 @@
         .chapter-header p {
             color: #7a7a7a;
             font-style: italic;
-
         }
         article {
             background: #fff;
@@ -105,13 +102,30 @@
             color: #d4af37;
             font-size: 1.5rem;
         }
+        article h2 {
+            color: #8b4513;
+            margin: 2rem 0 1rem;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 0.5rem;
+        }
         article h3 {
             color: #8b4513;
             margin: 2rem 0 1rem;
             font-size: 1.3rem;
             text-transform: uppercase;
             letter-spacing: 1px;
+            border-bottom: 2px solid #d4af37;
             padding-bottom: 0.5rem;
+        }
+        article ul {
+            margin: 0 0 1.5rem 1.5rem;
+            color: #2c2c2c;
+        }
+        article ul li {
+            margin-bottom: 0.5rem;
         }
         .reflection-box {
             background: #faf8f3;
@@ -121,8 +135,12 @@
             font-style: italic;
             color: #5a5a5a;
         }
+        .reflection-box p {
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
 
-        /* Navigation  Links */
+        /* Navigation Links */
         .chapter-nav {
             display: flex;
             justify-content: space-between;
@@ -132,14 +150,12 @@
             background: #8b4513;
             color: white;
             text-decoration: none;
-            padding: 0.7rem 1.5rem;
+            padding: 0.75rem 1.5rem;
             border-radius: 4px;
             transition: background 0.3s;
-
         }
         .chapter-nav a:hover {
             background: #6a3410;
-
         }
 
         /* Footer */
@@ -195,298 +211,220 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <div>
-            <div>
-                <div>
-                    <a href="index.html">MINDS BEFORE GUNS</a>
-                    
-                    <!-- Mobile menu button -->
-                    <button id="menuBtn">
-                        ☰
-                    </button>
+        <a href="index.html" class="nav-brand">MINDS BEFORE GUNS</a>
+        <button id="menuBtn">☰</button>
 
-                    <!-- Desktop Menu -->
-                    <div>
-                        <a href="index.html">Home</a>
-                        <a href="chapter1.html">Ch. 1</a>
-                        <a href="chapter2.html">Ch. 2</a>
-                        <a href="chapter3.html">Ch. 3</a>
-                        <a href="chapter4.html">Ch. 4</a>
-                        <a href="chapter5.html">Ch. 5</a>
-                        <a href="chapter6.html">Ch. 6</a>
-                        <a href="chapter7.html">Ch. 7</a>
-                        <a href="chapter8.html">Ch. 8</a>
-                        <a href="chapter9.html">Ch. 9</a>
-                        <a href="#">Chapters</a>
-                    </div>
-                </div>
+        <!-- Desktop Menu -->
+        <div class="desktop-menu">
+            <a href="index.html">Home</a>
+            <a href="chapter1.html">Ch. 1</a>
+            <a href="chapter2.html">Ch. 2</a>
+            <a href="chapter3.html">Ch. 3</a>
+            <a href="chapter4.html">Ch. 4</a>
+            <a href="chapter5.html">Ch. 5</a>
+            <a href="chapter6.html">Ch. 6</a>
+            <a href="chapter7.html">Ch. 7</a>
+            <a href="chapter8.html">Ch. 8</a>
+            <a href="chapter9.html">Ch. 9</a>
+            <a href="#">Chapters</a>
+        </div>
 
-                <!-- Mobile Menu Items -->
-                <div id="mobileMenu">
-                    <a href="index.html">Home</a>
-                    <a href="chapter1.html">Chapter 1</a>
-                    <a href="chapter2.html">Chapter 2</a>
-                    <a href="chapter3.html">Chapter 3</a>
-                    <a href="chapter4.html">Chapter 4</a>
-                    <a href="chapter5.html">Chapter 5</a>
-                    <a href="chapter6.html">Chapter 6</a>
-                    <a href="chapter7.html">Chapter 7</a>
-                    <a href="chapter8.html">Chapter 8</a>
-                    <a href="chapter9.html">Chapter 9</a>
-                    <a href="#">All Chapters</a>
-                </div>
-            </div>
+        <!-- Mobile Menu Items -->
+        <div id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="chapter1.html">Chapter 1</a>
+            <a href="chapter2.html">Chapter 2</a>
+            <a href="chapter3.html">Chapter 3</a>
+            <a href="chapter4.html">Chapter 4</a>
+            <a href="chapter5.html">Chapter 5</a>
+            <a href="chapter6.html">Chapter 6</a>
+            <a href="chapter7.html">Chapter 7</a>
+            <a href="chapter8.html">Chapter 8</a>
+            <a href="chapter9.html">Chapter 9</a>
+            <a href="#">All Chapters</a>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <div>
+    <div class="main-content">
+
         <!-- Chapter Header -->
-        <div>
-            <div>
-                <h1>The Excavation</h1>
-                <p>Chapter Nine</p>
-                <div></div>
-            </div>
+        <div class="chapter-header">
+            <h1>The Excavation</h1>
+            <p>Chapter Nine</p>
         </div>
 
         <!-- Chapter Content -->
         <article>
-            <div>
-                
-                <!-- Introduction -->
-                <div>
-                    <p>
-                        They dug for pottery and found a prophecy.
-                    </p>
-                    <p>
-                        Twenty-three years after the Heir's jet fell from the sky, Isiba had been rebuilt. Not as the dream it was meant to be, but as what power always builds: a monument to itself.
-                    </p>
-                </div>
 
-                <!-- Part One -->
-                <div>
-                    <h2>PART ONE: THE GENERATION THAT FORGOT</h2>
-                </div>
+            <!-- Introduction -->
+            <p>
+                They dug for pottery and found a prophecy.
+            </p>
+            <p>
+                Twenty-three years after the Heir's jet fell from the sky, Isiba had been rebuilt. Not as the dream it was meant to be, but as what power always builds: a monument to itself.
+            </p>
 
-                <div>
-                    <p>
-                        The generation born after the fall knew nothing of what had been buried. Until the day they accidentally dug it up.
-                    </p>
-                </div>
+            <div class="section-divider">* * *</div>
 
-                <!-- The Archaeological Dig -->
-                <div>
-                    <h3>The Archaeological Dig</h3>
-                    <div>
-                        <p>Amara Odongo</p>
-                        <p>Third-year archaeology student</p>
-                    </div>
-                    <div>
-                        <p>The Discovery:</p>
-                        <p>A sealed chamber beneath the House of Thought ruins</p>
-                        <p>COVENANT OF THE FOUR WINDS</p>
-                    </div>
-                </div>
+            <!-- Part One -->
+            <h2>PART ONE: THE GENERATION THAT FORGOT</h2>
 
-                <!-- Part Two -->
-                <div>
-                    <h2>PART TWO: THE DISCOVERY</h2>
-                </div>
+            <p>
+                The generation born after the fall knew nothing of what had been buried. Until the day they accidentally dug it up.
+            </p>
 
-                <div>
-                    <p>
-                        Amara's hands trembled as she unrolled the scroll in the university lab.
-                    </p>
-                    <div>
-                        <p>
-                            "We, the builders of a new Uganda, covenant together not to rule, but to reconcile..."
-                        </p>
-                    </div>
-                    <div>
-                        <p>The Signature That Stopped Her:</p>
-                        <p>Kalisa Namukasa</p>
-                        <p>Architect. Keeper.</p>
-                    </div>
-                </div>
-
-                <!-- The Decision to Publish -->
-                <div>
-                    <h3>The Decision to Publish</h3>
-                    <div>
-                        <p>
-                            "The moment we reported finding this, we became dangerous. The only question is whether we stay silent or speak."
-                        </p>
-                    </div>
-                    <div>
-                        <p>Encrypted Upload</p>
-                        <p>Anonymous. Untraceable. Everywhere.</p>
-                    </div>
-                </div>
-
-                <!-- Part Three -->
-                <div>
-                    <h2>PART THREE: THE FIRE RETURNS</h2>
-                </div>
-
-                <div>
-                    <p>
-                        The internet exploded. The covenant was shared, screenshot, quoted, remixed into songs and poems and videos.
-                    </p>
-                    <div>
-                        <p>#TheOtherDream</p>
-                        <p>Trending globally</p>
-                    </div>
-                    <div>
-                        <p>WE BUILD NOT TO RULE, BUT TO RECONCILE</p>
-                        <p>Spray-painted on walls across Uganda</p>
-                    </div>
-                </div>
-
-                <!-- The Crackdown Begins -->
-                <div>
-                    <h3>The Crackdown Begins</h3>
-                    <p>
-                        Within a week, military trucks reappeared in university districts. Midnight raids. Detentions. Disappearances.
-                    </p>
-                    <div>
-                        <p>
-                            "Stop now or disappear."
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Part Four -->
-                <div>
-                    <h2>PART FOUR: THE AWAKENING</h2>
-                </div>
-
-                <div>
-                    <p>
-                        Underground, the networks were already forming. The Keepers — dormant for years — began to reconnect.
-                    </p>
-                    <div>
-                        <p>
-                            "They will bury this truth. But truth, like seed, grows when watered. And you — whoever finds this — are the rain."
-                        </p>
-                        <p>- Kalisa's preserved letters</p>
-                    </div>
-                    <p>
-                        "They fear memory because it reminds them what we were meant to be."
-                    </p>
-                </div>
-
-                <!-- Part Five -->
-                <div>
-                    <h2>PART FIVE: THE SHUTDOWN</h2>
-                </div>
-
-                <div>
-                    <p>
-                        One night, the internet went dark. All networks. All providers. Simultaneous.
-                    </p>
-                    <div>
-                        <div>
-                            <p>Official Statement:</p>
-                            <p>"Temporary suspension due to national security"</p>
-                        </div>
-                        <div>
-                            <p>The Truth:</p>
-                            <p>Couldn't control narrative, killed the medium</p>
-                        </div>
-                    </div>
-                    <p>
-                        "They can cut the net. But they can't cut memory."
-                    </p>
-                </div>
-
-                <!-- Part Six -->
-                <div>
-                    <h2>PART SIX: THE ESCAPE</h2>
-                </div>
-
-                <div>
-                    <p>
-                        When the soldiers came for Amara, she was already gone. Smuggled out in a vegetable truck toward the ruins of Old Isiba.
-                    </p>
-                    <div>
-                        <p>
-                            "It was real. And it was a story. Because all real things become stories when no one remembers them."
-                        </p>
-                    </div>
-                    <div>
-                        <p>The Choice</p>
-                        <div>
-                            <div>
-                                <p>Running</p>
-                                <p>Keeps you alive</p>
-                            </div>
-                            <div>
-                                <p>Planting</p>
-                                <p>Keeps the dream alive</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Reflection -->
-                <div>
-                    <h3>REFLECTION</h3>
-                    
-                    <p>
-                        The covenant was found. The people awakened. The regime struck back.
-                    </p>
-
-                    <p>
-                        And still, the cycle turned. As it always had. As it always would — until someone broke it.
-                    </p>
-
-                    <div>
-                        <div>
-                            <p>Can a buried truth still bloom, or does it need more than soil?</p>
-                            <p>When the internet is cut and the voices are silenced, does the story survive?</p>
-                            <p>If every generation must fight the same fight, is progress real or just another word for repetition?</p>
-                            <p>What happens when the dreamers meet the keepers — and realize they are the same?</p>
-                            <p>And when they finally come for the last copy of the covenant, who will have memorized it by heart?</p>
-                        </div>
-                        <div>
-                            <p>
-                                The ground split, and from its wound came a covenant. Not dead. Not alive. But waiting. Always waiting. For hands brave enough to dig. For voices stubborn enough to speak. For memory that refuses to die.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+            <h3>The Archaeological Dig</h3>
+            <div class="reflection-box">
+                <p><strong>Amara Odongo</strong> — Third-year archaeology student</p>
             </div>
+            <div class="reflection-box">
+                <p>The Discovery: A sealed chamber beneath the House of Thought ruins</p>
+                <p><strong>COVENANT OF THE FOUR WINDS</strong></p>
+            </div>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Two -->
+            <h2>PART TWO: THE DISCOVERY</h2>
+
+            <p>
+                Amara's hands trembled as she unrolled the scroll in the university lab.
+            </p>
+            <div class="reflection-box">
+                <p>"We, the builders of a new Uganda, covenant together not to rule, but to reconcile..."</p>
+            </div>
+            <div class="reflection-box">
+                <p>The Signature That Stopped Her:</p>
+                <p><strong>Kalisa Namukasa</strong> — Architect. Keeper.</p>
+            </div>
+
+            <h3>The Decision to Publish</h3>
+            <div class="reflection-box">
+                <p>"The moment we reported finding this, we became dangerous. The only question is whether we stay silent or speak."</p>
+            </div>
+            <div class="reflection-box">
+                <p><strong>Encrypted Upload</strong> — Anonymous. Untraceable. Everywhere.</p>
+            </div>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Three -->
+            <h2>PART THREE: THE FIRE RETURNS</h2>
+
+            <p>
+                The internet exploded. The covenant was shared, screenshot, quoted, remixed into songs and poems and videos.
+            </p>
+            <div class="reflection-box">
+                <p><strong>#TheOtherDream</strong> — Trending globally</p>
+            </div>
+            <div class="reflection-box">
+                <p><strong>WE BUILD NOT TO RULE, BUT TO RECONCILE</strong></p>
+                <p>Spray-painted on walls across Uganda</p>
+            </div>
+
+            <h3>The Crackdown Begins</h3>
+            <p>
+                Within a week, military trucks reappeared in university districts. Midnight raids. Detentions. Disappearances.
+            </p>
+            <div class="reflection-box">
+                <p>"Stop now or disappear."</p>
+            </div>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Four -->
+            <h2>PART FOUR: THE AWAKENING</h2>
+
+            <p>
+                Underground, the networks were already forming. The Keepers — dormant for years — began to reconnect.
+            </p>
+            <div class="reflection-box">
+                <p>"They will bury this truth. But truth, like seed, grows when watered. And you — whoever finds this — are the rain."</p>
+                <p>— Kalisa's preserved letters</p>
+            </div>
+            <p>
+                "They fear memory because it reminds them what we were meant to be."
+            </p>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Five -->
+            <h2>PART FIVE: THE SHUTDOWN</h2>
+
+            <p>
+                One night, the internet went dark. All networks. All providers. Simultaneous.
+            </p>
+            <div class="reflection-box">
+                <p>Official Statement: "Temporary suspension due to national security"</p>
+                <p>The Truth: Couldn't control narrative, killed the medium</p>
+            </div>
+            <p>
+                "They can cut the net. But they can't cut memory."
+            </p>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Six -->
+            <h2>PART SIX: THE ESCAPE</h2>
+
+            <p>
+                When the soldiers came for Amara, she was already gone. Smuggled out in a vegetable truck toward the ruins of Old Isiba.
+            </p>
+            <div class="reflection-box">
+                <p>"It was real. And it was a story. Because all real things become stories when no one remembers them."</p>
+            </div>
+            <div class="reflection-box">
+                <p><strong>Running</strong> — Keeps you alive</p>
+                <p><strong>Planting</strong> — Keeps the dream alive</p>
+            </div>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Reflection -->
+            <h3>Reflection</h3>
+
+            <p>
+                The covenant was found. The people awakened. The regime struck back.
+            </p>
+            <p>
+                And still, the cycle turned. As it always had. As it always would — until someone broke it.
+            </p>
+
+            <div class="reflection-box">
+                <p>Can a buried truth still bloom, or does it need more than soil?</p>
+                <p>When the internet is cut and the voices are silenced, does the story survive?</p>
+                <p>If every generation must fight the same fight, is progress real or just another word for repetition?</p>
+                <p>What happens when the dreamers meet the keepers — and realize they are the same?</p>
+                <p>And when they finally come for the last copy of the covenant, who will have memorized it by heart?</p>
+            </div>
+
+            <div class="reflection-box">
+                <p>The ground split, and from its wound came a covenant. Not dead. Not alive. But waiting. Always waiting. For hands brave enough to dig. For voices stubborn enough to speak. For memory that refuses to die.</p>
+            </div>
+
         </article>
 
         <!-- Navigation -->
-        <div>
-            <a href="chapter8.html">
-                <span>←</span>
-                <span>Chapter 8</span>
-            </a>
-            <a href="chapter10.html">
-                <span>Chapter 10</span>
-                <span>→</span>
-            </a>
+        <div class="chapter-nav">
+            <a href="chapter8.html">← Chapter 8</a>
+            <a href="chapter10.html">Chapter 10 →</a>
         </div>
+
     </div>
 
     <!-- Footer -->
     <footer>
+        <p>Minds Before Guns</p>
+        <p>Uganda Alternate History Project</p>
         <div>
-            <p>Minds Before Guns</p>
-            <p>Uganda Alternate History Project</p>
-            <div>
-                <a href="#">About</a>
-                <a href="#">Chapters</a>
-                <a href="#">Contact</a>
-            </div>
+            <a href="#">About</a>
+            <a href="#">Chapters</a>
+            <a href="#">Contact</a>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu -->
+    <!-- JavaScript -->
     <script>
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
@@ -499,7 +437,6 @@
             }
         });
 
-        // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!e.target.closest('nav') && mobileMenu.style.display === 'block') {
                 mobileMenu.style.display = 'none';

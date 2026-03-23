@@ -10,30 +10,30 @@
             padding: 0;
             box-sizing: border-box;
         }
-
-         body {
+        body {
             font-family: Georgia, serif;
             background: #f5f5f0;
+            color: #2c2c2c;
             line-height: 1.7;
-         }
+        }
 
-         /* Navigation */
-         nav {
+        /* Navigation */
+        nav {
             background: #fff;
             padding: 1rem;
             border-bottom: 2px solid #d4af37;
             position: sticky;
             top: 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-         }
-         .nav-brand {
+        }
+        .nav-brand {
             color: #8b4513;
             text-decoration: none;
             font-size: 1.3rem;
             font-weight: bold;
             letter-spacing: 1px;
-         }
-         #menuBtn {
+        }
+        #menuBtn {
             display: none;
             background: #8b4513;
             color: white;
@@ -42,32 +42,32 @@
             cursor: pointer;
             float: right;
             border-radius: 4px;
-         }
-         .desktop-menu {
+        }
+        .desktop-menu {
             margin-top: 1rem;
-         }
-         .desktop-menu a, #mobileMenu a {
+        }
+        .desktop-menu a, #mobileMenu a {
             color: #5a5a5a;
             text-decoration: none;
             padding: 0.5rem 1rem;
             display: inline-block;
-         }
-         .desktop-menu a:hover, #mobileMenu a:hover {
+        }
+        .desktop-menu a:hover, #mobileMenu a:hover {
             background: #8b4513;
             color: white;
             border-radius: 4px;
-         }
-         #mobileMenu {
+        }
+        #mobileMenu {
             display: none;
-         }
+        }
 
-         /* Content */
-         .main-content {
+        /* Content */
+        .main-content {
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem 1rem;
-         }
-         .chapter-header {
+        }
+        .chapter-header {
             text-align: center;
             padding: 2rem;
             background: #fff;
@@ -75,34 +75,43 @@
             margin-bottom: 2rem;
             border-left: 4px solid #d4af37;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-         }
-         .chapter-header h1 {
+        }
+        .chapter-header h1 {
             color: #8b4513;
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
-         }
-         .chapter-header p {
+        }
+        .chapter-header p {
             color: #7a7a7a;
             font-style: italic;
-         }
-         article {
+        }
+        article {
             background: #fff;
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 2rem;
-         }
-         article p {
+        }
+        article p {
             margin-bottom: 1.5rem;
             text-align: justify;
-         }
-         .section-divider {
+        }
+        .section-divider {
             text-align: center;
             margin: 2rem 0;
             color: #d4af37;
             font-size: 1.5rem;
-         }
-         article h3 {
+        }
+        article h2 {
+            color: #8b4513;
+            margin: 2rem 0 1rem;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 0.5rem;
+        }
+        article h3 {
             color: #8b4513;
             margin: 2rem 0 1rem;
             font-size: 1.3rem;
@@ -110,62 +119,73 @@
             letter-spacing: 1px;
             border-bottom: 2px solid #d4af37;
             padding-bottom: 0.5rem;
-         }
-         .reflection-box {
+        }
+        article h4 {
+            color: #8b4513;
+            margin: 1.5rem 0 0.75rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .reflection-box {
             background: #faf8f3;
             border-left: 4px solid #d4af37;
             padding: 1.5rem;
             margin: 2rem 0;
             font-style: italic;
             color: #5a5a5a;
-         }
+        }
+        .reflection-box p {
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
 
-         /* Navigation Links */
-         .chapter-nav {
+        /* Navigation Links */
+        .chapter-nav {
             display: flex;
             justify-content: space-between;
             margin-bottom: 2rem;
-         }
-         .chapter-nav a {
+        }
+        .chapter-nav a {
             background: #8b4513;
             color: white;
             text-decoration: none;
             padding: 0.75rem 1.5rem;
             border-radius: 4px;
             transition: background 0.3s;
-         }
-         .chapter-nav a:hover {
+        }
+        .chapter-nav a:hover {
             background: #6a3410;
-         }
+        }
 
-         /* Footer */
-         footer {
+        /* Footer */
+        footer {
             background: #fff;
             border-top: 2px solid #d4af37;
             padding: 2rem 1rem;
             text-align: center;
             margin-top: 3rem;
-         }
-         footer p {
+        }
+        footer p {
             margin: 0.5rem 0;
             color: #5a5a5a;
-         }
-         footer p:first-child {
+        }
+        footer p:first-child {
             font-weight: bold;
             color: #8b4513;
             font-size: 1.1rem;
-         }
-         footer a {
+        }
+        footer a {
             color: #8b4513;
             text-decoration: none;
             margin: 0 1rem;
-         }
-         footer a:hover {
+        }
+        footer a:hover {
             text-decoration: underline;
-         }
+        }
 
-         /* Mobile */
-         @media (max-width: 768px) {
+        /* Mobile */
+        @media (max-width: 768px) {
             #menuBtn {
                 display: block;
             }
@@ -185,289 +205,225 @@
             article {
                 padding: 1.5rem;
             }
-         }
-
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <div>
-            <div>
-                <div>
-                    <a href="index.html">MINDS BEFORE GUNS</a>
-                    
-                    <!-- Mobile menu button -->
-                    <button id="menuBtn">
-                        ☰
-                    </button>
+        <a href="index.html" class="nav-brand">MINDS BEFORE GUNS</a>
+        <button id="menuBtn">☰</button>
 
-                    <!-- Desktop Menu -->
-                    <div>
-                        <a href="index.html">Home</a>
-                        <a href="chapter1.html">Ch. 1</a>
-                        <a href="chapter2.html">Ch. 2</a>
-                        <a href="chapter3.html">Ch. 3</a>
-                        <a href="chapter4.html">Ch. 4</a>
-                        <a href="chapter5.html">Ch. 5</a>
-                        <a href="chapter6.html">Ch. 6</a>
-                        <a href="chapter7.html">Ch. 7</a>
-                        <a href="chapter8.html">Ch. 8</a>
-                        <a href="chapter9.html">Ch. 9</a>
-                        <a href="chapter10.html">Ch. 10</a>
-                        <a href="#">Chapters</a>
-                    </div>
-                </div>
+        <!-- Desktop Menu -->
+        <div class="desktop-menu">
+            <a href="index.html">Home</a>
+            <a href="chapter1.html">Ch. 1</a>
+            <a href="chapter2.html">Ch. 2</a>
+            <a href="chapter3.html">Ch. 3</a>
+            <a href="chapter4.html">Ch. 4</a>
+            <a href="chapter5.html">Ch. 5</a>
+            <a href="chapter6.html">Ch. 6</a>
+            <a href="chapter7.html">Ch. 7</a>
+            <a href="chapter8.html">Ch. 8</a>
+            <a href="chapter9.html">Ch. 9</a>
+            <a href="chapter10.html">Ch. 10</a>
+            <a href="#">Chapters</a>
+        </div>
 
-                <!-- Mobile Menu Items -->
-                <div id="mobileMenu">
-                    <a href="index.html">Home</a>
-                    <a href="chapter1.html">Chapter 1</a>
-                    <a href="chapter2.html">Chapter 2</a>
-                    <a href="chapter3.html">Chapter 3</a>
-                    <a href="chapter4.html">Chapter 4</a>
-                    <a href="chapter5.html">Chapter 5</a>
-                    <a href="chapter6.html">Chapter 6</a>
-                    <a href="chapter7.html">Chapter 7</a>
-                    <a href="chapter8.html">Chapter 8</a>
-                    <a href="chapter9.html">Chapter 9</a>
-                    <a href="chapter10.html">Chapter 10</a>
-                    <a href="#">All Chapters</a>
-                </div>
-            </div>
+        <!-- Mobile Menu Items -->
+        <div id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="chapter1.html">Chapter 1</a>
+            <a href="chapter2.html">Chapter 2</a>
+            <a href="chapter3.html">Chapter 3</a>
+            <a href="chapter4.html">Chapter 4</a>
+            <a href="chapter5.html">Chapter 5</a>
+            <a href="chapter6.html">Chapter 6</a>
+            <a href="chapter7.html">Chapter 7</a>
+            <a href="chapter8.html">Chapter 8</a>
+            <a href="chapter9.html">Chapter 9</a>
+            <a href="chapter10.html">Chapter 10</a>
+            <a href="#">All Chapters</a>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <div>
+    <div class="main-content">
+
         <!-- Chapter Header -->
-        <div>
-            <div>
-                <h1>The Long Walk</h1>
-                <p>Chapter Ten</p>
-                <div></div>
-            </div>
+        <div class="chapter-header">
+            <h1>The Long Walk</h1>
+            <p>Chapter Ten</p>
         </div>
 
         <!-- Chapter Content -->
         <article>
-            <div>
-                
-                <!-- Introduction -->
-                <div>
-                    <p>
-                        Ten years had passed since the excavation. Ten years since Amara and her friends had unearthed the covenant. Ten years since Kalisa emerged from the shadows to tell them: <em>"You must choose — run or plant."</em>
-                    </p>
-                    <p>
-                        Amara had chosen both. She ran. Then she planted.
-                    </p>
-                </div>
 
-                <!-- Part One -->
-                <div>
-                    <h2>PART ONE: THE SILENCE AFTER THE STORM</h2>
-                </div>
+            <!-- Introduction -->
+            <p>
+                Ten years had passed since the excavation. Ten years since Amara and her friends had unearthed the covenant. Ten years since Kalisa emerged from the shadows to tell them: <em>"You must choose — run or plant."</em>
+            </p>
+            <p>
+                Amara had chosen both. She ran. Then she planted.
+            </p>
 
-                <!-- The Graffiti That Wouldn't Die -->
-                <div>
-                    <h3>The Graffiti That Wouldn't Die</h3>
-                    <div>
-                        <p>WE WERE MEANT TO BE ONE</p>
-                    </div>
-                    <p>
-                        Because you cannot arrest an idea. And you cannot erase what people have chosen to remember.
-                    </p>
-                </div>
+            <div class="section-divider">* * *</div>
 
-                <!-- Part Two -->
-                <div>
-                    <h2>PART TWO: THE MARCH OF THE FEW</h2>
-                </div>
+            <!-- Part One -->
+            <h2>PART ONE: THE SILENCE AFTER THE STORM</h2>
 
-                <div>
-                    <p>
-                        It began with a rumor. No organization called for it. No opposition party endorsed it. No foreign NGO funded it.
-                    </p>
-                    <div>
-                        <p>
-                            "They're walking to Isiba. Thousands of them."
-                        </p>
-                    </div>
-                    <p>
-                        But what do you do with a silent pilgrimage?
-                    </p>
-                </div>
-
-                <!-- Part Three -->
-                <div>
-                    <h2>PART THREE: THE CROSSING</h2>
-                </div>
-
-                <div>
-                    <p>
-                        They reached the outskirts of Isiba as the sun set on the third day. The city had changed, but beneath the surface, the foundations remained.
-                    </p>
-                    <div>
-                        <p>
-                            "Every generation must dig its own truth."
-                        </p>
-                    </div>
-                    <div>
-                        <p>COVENANT OF THE FOUR WINDS</p>
-                        <p>Found again, impossibly</p>
-                    </div>
-                </div>
-
-                <!-- The Soldiers Watch -->
-                <div>
-                    <h3>The Soldiers Watch</h3>
-                    <p>
-                        On the rooftops surrounding the square, soldiers stood with rifles. They had orders. Clear orders.
-                    </p>
-                    <p>
-                        But they didn't fire.
-                    </p>
-                </div>
-
-                <!-- Part Four -->
-                <div>
-                    <h2>PART FOUR: THE RETURN OF LIGHT</h2>
-                </div>
-
-                <div>
-                    <p>
-                        Night fell over Isiba. But the darkness was broken by thousands of phone lights. Candles. Torches.
-                    </p>
-                    <div>
-                        <p>THE LONG WALK HAS ENDED</p>
-                        <p>The image that escaped everywhere</p>
-                    </div>
-                    <p>
-                        The truth. Or at least, a version of it that felt true.
-                    </p>
-                </div>
-
-                <!-- Part Five -->
-                <div>
-                    <h2>PART FIVE: THE TESTAMENT</h2>
-                </div>
-
-                <div>
-                    <p>
-                        Amara recorded one last message that night, in a tent on the edge of the excavation site.
-                    </p>
-                    <div>
-                        <p>
-                            "We didn't fight for a flag. We walked for a memory. For the idea that once, briefly, people tried to build something better."
-                        </p>
-                    </div>
-                    <p>
-                        "The walking is what makes us human. And the remembering is what makes us free."
-                    </p>
-                </div>
-
-                <!-- The Disappearance -->
-                <div>
-                    <h3>The Disappearance</h3>
-                    <p>
-                        No one saw her leave. Her body was never found. No arrest was announced. No death reported.
-                    </p>
-                    <div>
-                        <p>
-                            "Truth travels slower than bullets, but it never stops."
-                        </p>
-                        <p>- A.O.</p>
-                    </div>
-                </div>
-
-                <!-- Part Six -->
-                <div>
-                    <h2>PART SIX: THE BURIED SEED</h2>
-                </div>
-
-                <div>
-                    <p>
-                        Twenty years later, Isiba looked different again. The excavation site had been turned into a memorial. Sanitized. Commercialized.
-                    </p>
-                    <div>
-                        <p>The Wildflowers</p>
-                        <p>Yellow. Stubborn. Persistent. Growing in concrete.</p>
-                    </div>
-                    <p>
-                        And occasionally, when no one was watching, someone would kneel beside the flowers and press their palm to the ground. Remembering.
-                    </p>
-                </div>
-
-                <!-- Epilogue -->
-                <div>
-                    <h3>EPILOGUE: THE QUESTION REMAINS</h3>
-                    
-                    <p>
-                        The covenant is in a museum now. The story is taught in schools. The dream is archived.
-                    </p>
-
-                    <p>
-                        Because nations are not built once. They are built continuously. By every generation that chooses to remember.
-                    </p>
-
-                    <p>
-                        Uganda is still walking.
-                    </p>
-
-                    <!-- Final Reflection -->
-                    <div>
-                        <h4>REFLECTION</h4>
-                        <div>
-                            <p>Can a dream survive its dreamers?</p>
-                            <p>Does memory require victory, or just persistence?</p>
-                            <p>When the march ends, does the walk continue?</p>
-                            <p>If every generation must dig its own truth, is progress real or just the same struggle in new clothes?</p>
-                            <p>And when the last person who remembers is gone, who will teach the children what we tried to build?</p>
-                        </div>
-                        <div>
-                            <p>
-                                The seed was planted. Whether it grows depends on those who water it. The covenant is buried. Whether it's found depends on those brave enough to dig. The dream is sleeping. Whether it wakes depends on those stubborn enough to remember.
-                            </p>
-                            <p>
-                                History is not written by victors. It is written by those who refuse to forget.
-                            </p>
-                            <p>
-                                Uganda is still walking.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+            <h3>The Graffiti That Wouldn't Die</h3>
+            <div class="reflection-box">
+                <p>WE WERE MEANT TO BE ONE</p>
             </div>
+            <p>
+                Because you cannot arrest an idea. And you cannot erase what people have chosen to remember.
+            </p>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Two -->
+            <h2>PART TWO: THE MARCH OF THE FEW</h2>
+
+            <p>
+                It began with a rumor. No organization called for it. No opposition party endorsed it. No foreign NGO funded it.
+            </p>
+            <div class="reflection-box">
+                <p>"They're walking to Isiba. Thousands of them."</p>
+            </div>
+            <p>
+                But what do you do with a silent pilgrimage?
+            </p>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Three -->
+            <h2>PART THREE: THE CROSSING</h2>
+
+            <p>
+                They reached the outskirts of Isiba as the sun set on the third day. The city had changed, but beneath the surface, the foundations remained.
+            </p>
+            <div class="reflection-box">
+                <p>"Every generation must dig its own truth."</p>
+            </div>
+            <div class="reflection-box">
+                <p><strong>COVENANT OF THE FOUR WINDS</strong> — Found again, impossibly</p>
+            </div>
+
+            <h3>The Soldiers Watch</h3>
+            <p>
+                On the rooftops surrounding the square, soldiers stood with rifles. They had orders. Clear orders.
+            </p>
+            <p>
+                But they didn't fire.
+            </p>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Four -->
+            <h2>PART FOUR: THE RETURN OF LIGHT</h2>
+
+            <p>
+                Night fell over Isiba. But the darkness was broken by thousands of phone lights. Candles. Torches.
+            </p>
+            <div class="reflection-box">
+                <p><strong>THE LONG WALK HAS ENDED</strong> — The image that escaped everywhere</p>
+            </div>
+            <p>
+                The truth. Or at least, a version of it that felt true.
+            </p>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Five -->
+            <h2>PART FIVE: THE TESTAMENT</h2>
+
+            <p>
+                Amara recorded one last message that night, in a tent on the edge of the excavation site.
+            </p>
+            <div class="reflection-box">
+                <p>"We didn't fight for a flag. We walked for a memory. For the idea that once, briefly, people tried to build something better."</p>
+            </div>
+            <p>
+                "The walking is what makes us human. And the remembering is what makes us free."
+            </p>
+
+            <h3>The Disappearance</h3>
+            <p>
+                No one saw her leave. Her body was never found. No arrest was announced. No death reported.
+            </p>
+            <div class="reflection-box">
+                <p>"Truth travels slower than bullets, but it never stops."</p>
+                <p>— A.O.</p>
+            </div>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Six -->
+            <h2>PART SIX: THE BURIED SEED</h2>
+
+            <p>
+                Twenty years later, Isiba looked different again. The excavation site had been turned into a memorial. Sanitized. Commercialized.
+            </p>
+            <div class="reflection-box">
+                <p><strong>The Wildflowers</strong> — Yellow. Stubborn. Persistent. Growing in concrete.</p>
+            </div>
+            <p>
+                And occasionally, when no one was watching, someone would kneel beside the flowers and press their palm to the ground. Remembering.
+            </p>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Epilogue -->
+            <h3>Epilogue: The Question Remains</h3>
+
+            <p>
+                The covenant is in a museum now. The story is taught in schools. The dream is archived.
+            </p>
+            <p>
+                Because nations are not built once. They are built continuously. By every generation that chooses to remember.
+            </p>
+            <p>
+                Uganda is still walking.
+            </p>
+
+            <h4>Reflection</h4>
+            <div class="reflection-box">
+                <p>Can a dream survive its dreamers?</p>
+                <p>Does memory require victory, or just persistence?</p>
+                <p>When the march ends, does the walk continue?</p>
+                <p>If every generation must dig its own truth, is progress real or just the same struggle in new clothes?</p>
+                <p>And when the last person who remembers is gone, who will teach the children what we tried to build?</p>
+            </div>
+
+            <div class="reflection-box">
+                <p>The seed was planted. Whether it grows depends on those who water it. The covenant is buried. Whether it's found depends on those brave enough to dig. The dream is sleeping. Whether it wakes depends on those stubborn enough to remember.</p>
+                <p>History is not written by victors. It is written by those who refuse to forget.</p>
+                <p><em>Uganda is still walking.</em></p>
+            </div>
+
         </article>
 
         <!-- Final Navigation -->
-        <div>
-            <a href="chapter9.html">
-                <span>←</span>
-                <span>Chapter 9</span>
-            </a>
-            <a href="index.html">
-                <span>Return Home</span>
-                <span>🏠</span>
-            </a>
+        <div class="chapter-nav">
+            <a href="chapter9.html">← Chapter 9</a>
+            <a href="index.html">Return Home 🏠</a>
         </div>
+
     </div>
 
     <!-- Footer -->
     <footer>
+        <p>Minds Before Guns</p>
+        <p>Uganda Alternate History Project</p>
         <div>
-            <p>Minds Before Guns</p>
-            <p>Uganda Alternate History Project</p>
-            <div>
-                <a href="#">About</a>
-                <a href="#">Chapters</a>
-                <a href="#">Contact</a>
-            </div>
+            <a href="#">About</a>
+            <a href="#">Chapters</a>
+            <a href="#">Contact</a>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu -->
+    <!-- JavaScript -->
     <script>
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
@@ -480,7 +436,6 @@
             }
         });
 
-        // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!e.target.closest('nav') && mobileMenu.style.display === 'block') {
                 mobileMenu.style.display = 'none';

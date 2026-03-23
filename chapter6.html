@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>When Silence Becomes Blood - Minds Before Guns</title>
     <style>
         * {
@@ -24,7 +25,6 @@
             position: sticky;
             top: 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
         }
         .nav-brand {
             color: #8b4513;
@@ -102,7 +102,16 @@
             color: #d4af37;
             font-size: 1.5rem;
         }
-        article {
+        article h2 {
+            color: #8b4513;
+            margin: 2rem 0 1rem;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 0.5rem;
+        }
+        article h3 {
             color: #8b4513;
             margin: 2rem 0 1rem;
             font-size: 1.3rem;
@@ -111,13 +120,34 @@
             border-bottom: 2px solid #d4af37;
             padding-bottom: 0.5rem;
         }
+        article h4 {
+            color: #8b4513;
+            margin: 1.5rem 0 0.75rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        article ul {
+            margin: 0 0 1.5rem 1.5rem;
+            color: #2c2c2c;
+        }
+        article ul li {
+            margin-bottom: 0.5rem;
+        }
         .reflection-box {
             background: #faf8f3;
             border-left: 4px solid #d4af37;
             padding: 1.5rem;
-            margin: 2rem;
+            margin: 2rem 0;
             font-style: italic;
             color: #5a5a5a;
+        }
+        .reflection-box p {
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+        .reflection-box blockquote {
+            margin: 0.5rem 0;
         }
 
         /* Navigation Links */
@@ -130,7 +160,7 @@
             background: #8b4513;
             color: white;
             text-decoration: none;
-            padding: 0.7rem 1.5rem;
+            padding: 0.75rem 1.5rem;
             border-radius: 4px;
             transition: background 0.3s;
         }
@@ -191,289 +221,217 @@
 <body>
     <!-- Navigation -->
     <nav>
-        <div>
-            <div>
-                <div>
-                    <a href="index.html">MINDS BEFORE GUNS</a>
-                    
-                    <!-- Mobile menu button -->
-                    <button id="menuBtn">
-                        ☰
-                    </button>
+        <a href="index.html" class="nav-brand">MINDS BEFORE GUNS</a>
+        <button id="menuBtn">☰</button>
 
-                    <!-- Desktop Menu -->
-                    <div>
-                        <a href="index.html">Home</a>
-                        <a href="chapter1.html">Ch. 1</a>
-                        <a href="chapter2.html">Ch. 2</a>
-                        <a href="chapter3.html">Ch. 3</a>
-                        <a href="chapter4.html">Ch. 4</a>
-                        <a href="chapter5.html">Ch. 5</a>
-                        <a href="chapter6.html">Ch. 6</a>
-                        <a href="#">Chapters</a>
-                    </div>
-                </div>
+        <!-- Desktop Menu -->
+        <div class="desktop-menu">
+            <a href="index.html">Home</a>
+            <a href="chapter1.html">Ch. 1</a>
+            <a href="chapter2.html">Ch. 2</a>
+            <a href="chapter3.html">Ch. 3</a>
+            <a href="chapter4.html">Ch. 4</a>
+            <a href="chapter5.html">Ch. 5</a>
+            <a href="chapter6.html">Ch. 6</a>
+            <a href="#">Chapters</a>
+        </div>
 
-                <!-- Mobile Menu Items -->
-                <div id="mobileMenu">
-                    <a href="index.html">Home</a>
-                    <a href="chapter1.html">Chapter 1</a>
-                    <a href="chapter2.html">Chapter 2</a>
-                    <a href="chapter3.html">Chapter 3</a>
-                    <a href="chapter4.html">Chapter 4</a>
-                    <a href="chapter5.html">Chapter 5</a>
-                    <a href="chapter6.html">Chapter 6</a>
-                    <a href="#">All Chapters</a>
-                </div>
-            </div>
+        <!-- Mobile Menu Items -->
+        <div id="mobileMenu">
+            <a href="index.html">Home</a>
+            <a href="chapter1.html">Chapter 1</a>
+            <a href="chapter2.html">Chapter 2</a>
+            <a href="chapter3.html">Chapter 3</a>
+            <a href="chapter4.html">Chapter 4</a>
+            <a href="chapter5.html">Chapter 5</a>
+            <a href="chapter6.html">Chapter 6</a>
+            <a href="#">All Chapters</a>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <div>
+    <div class="main-content">
+
         <!-- Chapter Header -->
-        <div>
-            <div>
-                <h1>When Silence Becomes Blood</h1>
-                <p>Chapter Six</p>
-                <div></div>
-            </div>
+        <div class="chapter-header">
+            <h1>When Silence Becomes Blood</h1>
+            <p>Chapter Six</p>
         </div>
 
         <!-- Chapter Content -->
         <article>
-            <div>
-                
-                <!-- Introduction -->
-                <div>
-                    <p>
-                        The drought came like a debt collector — patient, inevitable, and without mercy.
-                    </p>
-                    <p>
-                        And the people whispered, <em>"Maybe the old spirits are angry."</em>
-                    </p>
-                    <p>
-                        But the spirits had nothing to do with it.
-                    </p>
-                </div>
 
-                <!-- Part One -->
-                <div>
-                    <h2>PART ONE: THE DROUGHT</h2>
-                </div>
+            <!-- Introduction -->
+            <p>
+                The drought came like a debt collector — patient, inevitable, and without mercy.
+            </p>
+            <p>
+                And the people whispered, <em>"Maybe the old spirits are angry."</em>
+            </p>
+            <p>
+                But the spirits had nothing to do with it.
+            </p>
 
-                <!-- The Invisible Hand -->
-                <div>
-                    <h3>The Invisible Hand</h3>
-                    <p>
-                        Somewhere in warehouses by the northern railway, sacks of imported grain sat rotting behind locked metal doors. British merchants, Indian brokers, and a handful of Ugandan officials counted profits while the nation counted bodies.
-                    </p>
-                    <div>
-                        <p>
-                            It was the perfect crime. Invisible. Legal. Wrapped in the language of "market efficiency" and "supply chain management."
-                        </p>
-                    </div>
-                    <p>
-                        And so Isiba — the city of dust and dreams — began to starve before it could breathe.
-                    </p>
-                </div>
+            <div class="section-divider">* * *</div>
 
-                <!-- Part Two -->
-                <div>
-                    <h2>PART TWO: THE ASSASSINATION</h2>
-                </div>
+            <!-- Part One -->
+            <h2>PART ONE: THE DROUGHT</h2>
 
-                <div>
-                    <p>
-                        It happened at dawn. A single shot in the marble corridor of the House of Thought. The sound echoed longer than the bullet traveled.
-                    </p>
-                    <div>
-                        <p>Governor Nambi of the East</p>
-                        <p>The teacher, the poet, the believer</p>
-                        <p>Her manifesto: <em>"Education as Emergency"</em></p>
-                    </div>
-                </div>
-
-                <!-- Part Three -->
-                <div>
-                    <h2>PART THREE: THE FOOD RIOTS</h2>
-                </div>
-
-                <!-- The Match That Lit the Fire -->
-                <div>
-                    <h3>The Match That Lit the Fire</h3>
-                    <div>
-                        <p>
-                            "But my children haven't eaten in two days," she said.
-                        </p>
-                        <p>
-                            The official shrugged. "Come back tomorrow."
-                        </p>
-                        <p>
-                            "Tomorrow?" Her voice cracked. "Tomorrow they might be dead."
-                        </p>
-                    </div>
-                    <p>
-                        She didn't scream. She didn't cry. She simply picked up a stone from the ground and threw it at the ration truck.
-                    </p>
-                </div>
-
-                <!-- Kalisa Rises -->
-                <div>
-                    <h3>Kalisa Rises</h3>
-                    <p>
-                        From the chaos rose Kalisa — the quiet architect who had designed schools that were never built, who had sketched a city that was never realized.
-                    </p>
-                    <div>
-                        <p>
-                            "Take it! You can't govern the dead!"
-                        </p>
-                    </div>
-                    <p>
-                        <em>"Kalisa for the People."</em>
-                    </p>
-                </div>
-
-                <!-- Part Four -->
-                <div>
-                    <h2>PART FOUR: RWAKASISI'S BETRAYAL REVEALED</h2>
-                </div>
-
-                <div>
-                    <p>
-                        The foreign loans Rwakasisi had taken were not loans. They were chains.
-                    </p>
-                    <div>
-                        <div>
-                            <p>The Terms:</p>
-                            <ul>
-                                <li>Permanent "advisory rights" over minerals</li>
-                                <li>Mandatory purchase of British goods</li>
-                                <li>Veto power over policies</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <p>The Price:</p>
-                            <p>$50 million</p>
-                            <p>A fraction of mineral worth</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Part Five -->
-                <div>
-                    <h2>PART FIVE: THE MILITARY MOVES</h2>
-                </div>
-
-                <div>
-                    <div>
-                        <p>
-                            "You need order. And order requires authority. I am not asking for power. I am offering stability. Just until the drought ends. Temporary emergency powers."
-                        </p>
-                    </div>
-                    <p>
-                        They forgot that power doesn't share beds — it takes them.
-                    </p>
-                </div>
-
-                <!-- Part Six -->
-                <div>
-                    <h2>PART SIX: KALISA'S CHOICE</h2>
-                </div>
-
-                <div>
-                    <div>
-                        <p>
-                            "If I leave," she said, "who will remember what we tried to build?"
-                        </p>
-                        <p>
-                            "I'm not trying to save them," she replied. "I'm trying to remind them."
-                        </p>
-                    </div>
-                    <div>
-                        <p>REMEMBER</p>
-                        <p>The stone that marks the buried covenant</p>
-                    </div>
-                </div>
-
-                <!-- Part Seven -->
-                <div>
-                    <h2>PART SEVEN: THE FINAL COUNCIL MEETING</h2>
-                </div>
-
-                <div>
-                    <p>
-                        They met one last time in the half-lit chamber of the ruined House of Thought.
-                    </p>
-                    <div>
-                        <p>
-                            "You built a capital," he said quietly. "But you never built a nation. And now the difference will cost you everything."
-                        </p>
-                    </div>
-                    <p>
-                        "You had a chance. You buried a covenant that said, 'We build not to rule, but to reconcile.' But you forgot to read it."
-                    </p>
-                </div>
-
-                <!-- Reflection -->
-                <div>
-                    <h3>REFLECTION</h3>
-                    
-                    <p>
-                        Isiba still stands — but hollow.
-                    </p>
-
-                    <p>
-                        Kalisa's movement, <em>The Other Dream</em>, passed from mother to daughter, from teacher to student, from worker to worker. It became less a movement and more a memory.
-                    </p>
-
-                    <div>
-                        <h4>CLOSING QUESTIONS</h4>
-                        <div>
-                            <p>Can a nation survive when its leaders choose order over justice?</p>
-                            <p>When foreign aid comes with invisible chains, is it aid or colonialism by another name?</p>
-                            <p>If a covenant is buried and forgotten, was it ever real?</p>
-                            <p>When the people rise and the government responds with soldiers, who is the enemy?</p>
-                            <p>And when the dreamers are silenced, who will dream the nation forward?</p>
-                        </div>
-                        <div>
-                            <p>
-                                The drought ended. But the thirst for justice never does.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
+            <h3>The Invisible Hand</h3>
+            <p>
+                Somewhere in warehouses by the northern railway, sacks of imported grain sat rotting behind locked metal doors. British merchants, Indian brokers, and a handful of Ugandan officials counted profits while the nation counted bodies.
+            </p>
+            <div class="reflection-box">
+                <p>It was the perfect crime. Invisible. Legal. Wrapped in the language of "market efficiency" and "supply chain management."</p>
             </div>
+            <p>
+                And so Isiba — the city of dust and dreams — began to starve before it could breathe.
+            </p>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Two -->
+            <h2>PART TWO: THE ASSASSINATION</h2>
+
+            <p>
+                It happened at dawn. A single shot in the marble corridor of the House of Thought. The sound echoed longer than the bullet traveled.
+            </p>
+            <div class="reflection-box">
+                <p>Governor Nambi of the East</p>
+                <p>The teacher, the poet, the believer</p>
+                <p>Her manifesto: <em>"Education as Emergency"</em></p>
+            </div>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Three -->
+            <h2>PART THREE: THE FOOD RIOTS</h2>
+
+            <h3>The Match That Lit the Fire</h3>
+            <div class="reflection-box">
+                <p>"But my children haven't eaten in two days," she said.</p>
+                <p>The official shrugged. "Come back tomorrow."</p>
+                <p>"Tomorrow?" Her voice cracked. "Tomorrow they might be dead."</p>
+            </div>
+            <p>
+                She didn't scream. She didn't cry. She simply picked up a stone from the ground and threw it at the ration truck.
+            </p>
+
+            <h3>Kalisa Rises</h3>
+            <p>
+                From the chaos rose Kalisa — the quiet architect who had designed schools that were never built, who had sketched a city that was never realized.
+            </p>
+            <div class="reflection-box">
+                <p>"Take it! You can't govern the dead!"</p>
+            </div>
+            <p><em>"Kalisa for the People."</em></p>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Four -->
+            <h2>PART FOUR: RWAKASISI'S BETRAYAL REVEALED</h2>
+
+            <p>
+                The foreign loans Rwakasisi had taken were not loans. They were chains.
+            </p>
+            <div class="reflection-box">
+                <p>The Terms:</p>
+                <ul>
+                    <li>Permanent "advisory rights" over minerals</li>
+                    <li>Mandatory purchase of British goods</li>
+                    <li>Veto power over policies</li>
+                </ul>
+            </div>
+            <div class="reflection-box">
+                <p>The Price: $50 million</p>
+                <p>A fraction of mineral worth</p>
+            </div>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Five -->
+            <h2>PART FIVE: THE MILITARY MOVES</h2>
+
+            <div class="reflection-box">
+                <p>"You need order. And order requires authority. I am not asking for power. I am offering stability. Just until the drought ends. Temporary emergency powers."</p>
+            </div>
+            <p>
+                They forgot that power doesn't share beds — it takes them.
+            </p>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Six -->
+            <h2>PART SIX: KALISA'S CHOICE</h2>
+
+            <div class="reflection-box">
+                <p>"If I leave," she said, "who will remember what we tried to build?"</p>
+                <p>"I'm not trying to save them," she replied. "I'm trying to remind them."</p>
+            </div>
+            <div class="reflection-box">
+                <p>REMEMBER — The stone that marks the buried covenant</p>
+            </div>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Part Seven -->
+            <h2>PART SEVEN: THE FINAL COUNCIL MEETING</h2>
+
+            <p>
+                They met one last time in the half-lit chamber of the ruined House of Thought.
+            </p>
+            <div class="reflection-box">
+                <p>"You built a capital," he said quietly. "But you never built a nation. And now the difference will cost you everything."</p>
+            </div>
+            <p>
+                "You had a chance. You buried a covenant that said, 'We build not to rule, but to reconcile.' But you forgot to read it."
+            </p>
+
+            <div class="section-divider">* * *</div>
+
+            <!-- Reflection -->
+            <h3>Reflection</h3>
+
+            <p>Isiba still stands — but hollow.</p>
+            <p>
+                Kalisa's movement, <em>The Other Dream</em>, passed from mother to daughter, from teacher to student, from worker to worker. It became less a movement and more a memory.
+            </p>
+
+            <h4>Closing Questions</h4>
+            <div class="reflection-box">
+                <p>Can a nation survive when its leaders choose order over justice?</p>
+                <p>When foreign aid comes with invisible chains, is it aid or colonialism by another name?</p>
+                <p>If a covenant is buried and forgotten, was it ever real?</p>
+                <p>When the people rise and the government responds with soldiers, who is the enemy?</p>
+                <p>And when the dreamers are silenced, who will dream the nation forward?</p>
+            </div>
+
+            <div class="reflection-box">
+                <p>The drought ended. But the thirst for justice never does.</p>
+            </div>
+
         </article>
 
         <!-- Navigation -->
-        <div>
-            <a href="chapter5.html">
-                <span>←</span>
-                <span>Chapter 5</span>
-            </a>
-            <a href="chapter7.html">
-                <span>Chapter 7</span>
-                <span>→</span>
-            </a>
+        <div class="chapter-nav">
+            <a href="chapter5.html">← Chapter 5</a>
+            <a href="chapter7.html">Chapter 7 →</a>
         </div>
+
     </div>
 
     <!-- Footer -->
     <footer>
+        <p>Minds Before Guns</p>
+        <p>Uganda Alternate History Project</p>
         <div>
-            <p>Minds Before Guns</p>
-            <p>Uganda Alternate History Project</p>
-            <div>
-                <a href="#">About</a>
-                <a href="#">Chapters</a>
-                <a href="#">Contact</a>
-            </div>
+            <a href="#">About</a>
+            <a href="#">Chapters</a>
+            <a href="#">Contact</a>
         </div>
     </footer>
 
-    <!-- JavaScript for Mobile Menu -->
+    <!-- JavaScript -->
     <script>
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
@@ -486,7 +444,6 @@
             }
         });
 
-        // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!e.target.closest('nav') && mobileMenu.style.display === 'block') {
                 mobileMenu.style.display = 'none';
